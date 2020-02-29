@@ -79,9 +79,8 @@ ENABLE_CORRECTION="true"
 plugins=(colored-man-pages colorize)
 #        brew git web-search npm
 
-if [ -d $ZSH/oh-my-zsh.sh ]; do
-    source $ZSH/oh-my-zsh.sh
-done
+[ -f $ZSH/oh-my-zsh.sh ] && \
+  source $ZSH/oh-my-zsh.sh
 
 
 # User configuration
