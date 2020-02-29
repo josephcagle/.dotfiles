@@ -1,0 +1,14 @@
+
+alias ls='ls -G'
+alias l='ls -lh'
+alias la='ls -A'
+alias ll='ls -lAh'
+alias l.='ls -d .*'
+alias ll.='ls -lhd .*'
+
+alias gs='git status'
+alias gA='git add -A'
+
+alias info='info --vi-keys'
+
+
