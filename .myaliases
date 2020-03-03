@@ -1,4 +1,6 @@
 
+alias cp='cp -v'
+
 alias ls='ls -G'
 alias l='ls -lh'
 alias la='ls -A'
