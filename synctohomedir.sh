@@ -12,6 +12,7 @@ done
 echo "Making script for updating dotfiles in $HOME ..."
 cat <<END > $HOME/.updatedotfiles.sh
 #!/bin/bash
+echo "cd'ing to $HOME/Programming/mydotfiles."
 (cd $HOME/Programming/mydotfiles && exec ./synctohomedir.sh)
 END
 echo "Created .updatedotfiles.sh"
