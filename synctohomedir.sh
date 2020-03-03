@@ -9,5 +9,12 @@ do
     cp -v $dotfile $HOME
 done
 
-echo "Done!"
+echo "Making script for updating dotfiles in $HOME ..."
+cat <<END > $HOME/.updatedotfiles.sh
+#!/bin/bash
+(cd $HOME/Programming/mydotfiles && exec ./synctohomedir.sh)
+END
+echo "Created .updatedotfiles.sh"
+
+echo "All done!"
 
