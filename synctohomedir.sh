@@ -7,7 +7,7 @@ for dotfile in .*
 do
     [ $dotfile != .git ] &&      \
     [ $dotfile != .mailmap ] &&  \
-    cp -v $dotfile $HOME
+    cp -iv $dotfile $HOME
 done
 
 echo "Making script for updating dotfiles in $HOME ..."
