@@ -1,4 +1,5 @@
 
+PS1='[$(date +%k:%m:%S) \u@\h] \w $ '
 PATH=$PATH:$HOME/bin
 
 . .bash_aliases
