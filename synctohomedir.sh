@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo 'Be sure to `git` the latest version if yours is behind.' 
 echo "Copying files..."
 
 for dotfile in .*
