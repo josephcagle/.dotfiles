@@ -114,6 +114,6 @@ plugins=(colored-man-pages colorize)
 #export PS1="$(_user_host) $(git_prompt_info)
 #${_current_dir}%{$fg[$CARETCOLOR]%}▶%{$resetcolor%} "
 
-export PS1='[$(date +%k:%m:%S)] '"${_current_dir}%{$fg[$CARETCOLOR]%}▶%{$resetcolor%} "
-export PS2="   %{$fg[$CARETCOLOR]%}◀︎%{$resetcolor%} "
+export PS1='[$(date +%k:%m:%S)] '"${_current_dir}%{$fg[$CARETCOLOR]%}"$'\u25b6'"%{$resetcolor%} "
+export PS2="   %{$fg[$CARETCOLOR]%}"$'\u25c0'"%{$resetcolor%} "
 
