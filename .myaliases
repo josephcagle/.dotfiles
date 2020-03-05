@@ -1,3 +1,4 @@
+# .myaliases - my custom shell aliases (shared between shells)
 
 alias -- -='cd -'
 alias ...=../..
@@ -17,7 +18,7 @@ alias _='sudo '
 
 alias cp='cp -v'
 
-alias ls='ls -G'
+alias ls='ls -F --color=auto'
 alias l='ls -lh'
 alias la='ls -A'
 alias ll='ls -lAh'

@@ -1,5 +1,7 @@
 #!/bin/zsh
+# .zshrc - my zsh startup file
 
+# remove this when path setting is added to .myrc
 export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -96,6 +98,7 @@ plugins=(colored-man-pages colorize)
 # else
 #   export EDITOR='mvim'
 # fi
+# (this is set in .myrc)
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -109,7 +112,7 @@ plugins=(colored-man-pages colorize)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. $HOME/.myaliases
+. .myrc
 
 #export PS1="$(_user_host) $(git_prompt_info)
 #${_current_dir}%{$fg[$CARETCOLOR]%}▶%{$resetcolor%} "
