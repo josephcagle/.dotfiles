@@ -1,2 +1,2 @@
-. .bashrc
+. ./.bashrc
 

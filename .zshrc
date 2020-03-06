@@ -112,7 +112,7 @@ plugins=(colored-man-pages colorize)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. .myrc
+. ./.myrc
 
 #export PS1="$(_user_host) $(git_prompt_info)
 #${_current_dir}%{$fg[$CARETCOLOR]%}▶%{$resetcolor%} "
