@@ -7,11 +7,12 @@ for dotfile in .*
 do
     [ $dotfile != . ] &&                                                        \
     [ $dotfile != .. ] &&                                                       \
+    [ $dotfile != .DS_Store ] &&                                                \
     [ $dotfile != .git ] &&                                                     \
     [ $dotfile != .gitignore ] &&                                               \
-    for otherfile in $(cat .gitignore); do [ $dotfile != $otherfile ]; done &&  \
     [ $dotfile != .mailmap ] &&                                                 \
     [ ! "$(echo $dotfile | grep -qE '.swp$' ; echo $?)" = 0 ] &&                \
+#    for otherfile in $(cat .gitignore); do [ $dotfile != $otherfile ]; done &&  \
     cp -iv $dotfile $HOME
 done
 
