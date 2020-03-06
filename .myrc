@@ -14,7 +14,7 @@ HISTCONTROL=ignoreboth
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
-if [ -z $SSH_CONNECTION ]; then
+if [ -z "$SSH_CONNECTION" ]; then
     if [ "$(which mvim > /dev/null ; echo $?)" -eq 0 ]; then
         export EDITOR='mvim'
     elif [ "$(which gvim > /dev/null ; echo $?)" -eq 0 ]; then
