@@ -5,8 +5,13 @@ echo "Copying files..."
 
 for dotfile in .*
 do
-    [ $dotfile != .git ] &&      \
-    [ $dotfile != .mailmap ] &&  \
+    [ $dotfile != . ] &&                                                        \
+    [ $dotfile != .. ] &&                                                       \
+    [ $dotfile != .git ] &&                                                     \
+    [ $dotfile != .gitignore ] &&                                               \
+    for otherfile in $(cat .gitignore); do [ $dotfile != $otherfile ]; done &&  \
+    [ $dotfile != .mailmap ] &&                                                 \
+    [ ! "$(echo $dotfile | grep -qE '.swp$' ; echo $?)" = 0 ] &&                \
     cp -iv $dotfile $HOME
 done
 
