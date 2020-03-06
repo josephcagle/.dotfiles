@@ -10,14 +10,14 @@ export HISTFILESIZE=100000
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
-. .myaliases
+. ./.myaliases
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 if [ -z $SSH_CONNECTION ]; then
-    if [ which mvim > /dev/null ]; then
+    if [ "$(which mvim > /dev/null ; echo $?)" -eq 0 ]; then
         export EDITOR='mvim'
-    elif [ which gvim > /dev/null ]; then
+    elif [ "$(which gvim > /dev/null ; echo $?)" -eq 0 ]; then
         export EDITOR='gvim'
     fi
 fi
