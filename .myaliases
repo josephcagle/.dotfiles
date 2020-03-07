@@ -18,7 +18,18 @@ alias _='sudo '
 
 alias cp='cp -v'
 
-alias ls='ls -F'
+case "$(uname -a)" in
+*Linux*)
+    alias ls='ls -F --color=auto'
+    #TODO: change LS_COLORS or run dircolors or something
+    ;;
+*Darwin*)   # specifically Mac OS X
+    alias ls='ls -FG'
+    export LSCOLORS='exGxcxdxCxDaeaabagacad'
+    ;;
+*)
+    alias ls='ls -F'
+esac
 alias l='ls -lh'
 alias la='ls -A'
 alias ll='ls -lAh'
