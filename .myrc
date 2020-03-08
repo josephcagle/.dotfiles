@@ -10,7 +10,7 @@ export HISTFILESIZE=100000
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
-. ./.myaliases
+. $HOME/.myaliases
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'

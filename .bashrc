@@ -6,10 +6,10 @@ PS1='[$(date +%k:%m:%S) \u@\h] \w $ '
 PATH=$PATH:$HOME/bin
 
 # add bash-specific aliases
-. ./.bash_aliases
+. $HOME/.bash_aliases
 
 
-. ./.myrc
+. $HOME/.myrc
 
 # append to the history file; don't overwrite it
 shopt -s histappend
