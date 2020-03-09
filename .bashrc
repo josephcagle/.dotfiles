@@ -1,6 +1,6 @@
 
 # TODO: add color
-PS1='[$(date +%k:%m:%S) \u@\h] \w $ '
+PS1='[$(date +%k:%M:%S) \u@\h] \w $ '
 
 # remove this when path setting is added to .myrc
 PATH=$PATH:$HOME/bin
