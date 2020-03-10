@@ -118,5 +118,5 @@ plugins=(colored-man-pages colorize)
 #${_current_dir}%{$fg[$CARETCOLOR]%}▶%{$resetcolor%} "
 
 export PS1='[$(date +%k:%M:%S)] '"${_current_dir}%{$fg[$CARETCOLOR]%}"$'\u25b6'"%{$resetcolor%} "
-export PS2="   %{$fg[$CARETCOLOR]%}"$'\u25c0'"%{$resetcolor%} "
+export PS2="%{$fg[$CARETCOLOR]%}"$'\u25c0'"%{$resetcolor%} "
 
