@@ -16,9 +16,9 @@ HISTCONTROL=ignoreboth
 export EDITOR='vim'
 if [ -z "$SSH_CONNECTION" ]; then
     if [ "$(which mvim > /dev/null ; echo $?)" -eq 0 ]; then
-        export EDITOR='mvim'
+        export EDITOR='mvim -f'
     elif [ "$(which gvim > /dev/null ; echo $?)" -eq 0 ]; then
-        export EDITOR='gvim'
+        export EDITOR='gvim -f'
     fi
 fi
 
