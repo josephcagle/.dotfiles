@@ -9,4 +9,5 @@ if has("gui_running")
 endif
 
 set number
+inoremap ii <Esc>
 
