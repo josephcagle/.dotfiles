@@ -10,4 +10,5 @@ endif
 
 set number
 inoremap ii <Esc>
+inoremap jk <Esc>
 
