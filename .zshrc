@@ -78,8 +78,12 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages colorize)
+plugins=(colored-man-pages colorize zsh-autosuggestions)
 #        brew git web-search npm
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
+ZSH_AUTOCORRECT_BUFFER_MAX_SIZE=30
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+ZSH_AUTOSUGGEST_HISTORY_IGNORE='cd *'
 
 [ -f $ZSH/oh-my-zsh.sh ] && \
   source $ZSH/oh-my-zsh.sh
