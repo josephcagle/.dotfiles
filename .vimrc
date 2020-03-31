@@ -6,6 +6,7 @@ if has("gui_running")
 	set bs=2
 	set ai
 	set ruler
+	set lsp=2
 endif
 
 set number
