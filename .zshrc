@@ -78,8 +78,8 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages colorize zsh-autosuggestions)
-#        brew git web-search npm
+plugins=(colored-man-pages colorize)
+#        brew git web-search npm zsh-autosuggestions
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 ZSH_AUTOCORRECT_BUFFER_MAX_SIZE=30
 ZSH_AUTOSUGGEST_USE_ASYNC=1
