@@ -17,9 +17,18 @@ if has("gui_running")
 	inoremap <2-MiddleMouse> <Nop>
 	inoremap <3-MiddleMouse> <Nop>
 	inoremap <4-MiddleMouse> <Nop>
+
+	autocmd BufRead,BufNewFile *.md set filetype=markdown
+	autocmd BufRead,BufNewFile linuxclassnotes.md colorscheme slate
+	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal lbr
+	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal guifont=UbuntuMono-Regular:h20
+	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal columns=185
 endif
 
 set number
-inoremap ii <Esc>
+
+" inoremap ii <Esc>
 inoremap jk <Esc>
+inoremap ja <Esc>ja
+inoremap jA <Esc>jA
 
