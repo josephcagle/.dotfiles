@@ -1,4 +1,6 @@
 
+set nocompatible
+
 if has("gui_running")
 	syntax on
 	set hlsearch
@@ -31,4 +33,8 @@ set number
 inoremap jk <Esc>
 inoremap ja <Esc>ja
 inoremap jA <Esc>jA
+
+if has("autocmd")
+  filetype plugin indent on
+endif
 
