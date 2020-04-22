@@ -13,17 +13,17 @@ do
     [ $dotfile != .mailmap ] &&                                                 \
     [ ! "$(echo $dotfile | grep -qE '.swp$' ; echo $?)" = 0 ] &&                \
 #    for otherfile in $(cat .gitignore); do [ $dotfile != $otherfile ]; done &&  \
-    cp -iv $dotfile $HOME
+    cp -riv $dotfile $HOME
 done
 
-echo "Making script for updating dotfiles in $HOME ..."
-cat <<END > $HOME/.updatedotfiles.sh && \
-  chmod u+x $HOME/.updatedotfiles.sh && \
-   echo "Created .updatedotfiles.sh"
-#!/bin/bash
-echo "cd'ing to $HOME/Programming/mydotfiles."
-(cd $HOME/Programming/mydotfiles && exec ./synctohomedir.sh)
-END
+#echo "Making script for updating dotfiles in $HOME ..."
+#cat <<END > $HOME/.updatedotfiles.sh && \
+#  chmod u+x $HOME/.updatedotfiles.sh && \
+#   echo "Created .updatedotfiles.sh"
+##!/bin/bash
+#echo "cd'ing to $HOME/Programming/mydotfiles."
+#(cd $HOME/Programming/mydotfiles && exec ./synctohomedir.sh)
+#END
 
 echo "All done!"
 
