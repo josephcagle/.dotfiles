@@ -23,7 +23,7 @@ if has("gui_running")
 	autocmd BufRead,BufNewFile *.md set filetype=markdown
 	autocmd BufRead,BufNewFile linuxclassnotes.md colorscheme slate
 	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal lbr
-	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal guifont=UbuntuMono-Regular:h20
+	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal guifont=UbuntuMono-Regular:h18
 	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal columns=185
 endif
 
