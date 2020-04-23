@@ -28,6 +28,7 @@ if has("gui_running")
 endif
 
 set number
+colorscheme monokai
 
 " inoremap ii <Esc>
 inoremap jk <Esc>
@@ -37,4 +38,6 @@ inoremap jA <Esc>jA
 if has("autocmd")
   filetype plugin indent on
 endif
+
+let g:comfortable_motion_friction = 200.0
 
