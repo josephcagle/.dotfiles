@@ -1,0 +1,11 @@
+
+# Files that `synctohomedir.sh` should sync
+.vim
+.bash_aliases
+.bash_logout
+.bash_profile
+.bashrc
+.myaliases
+.myrc
+.zshrc
+
