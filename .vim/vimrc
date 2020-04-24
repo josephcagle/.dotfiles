@@ -16,6 +16,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 if has("gui_running")
 	set guifont=UbuntuMono-Regular:h16
+	set columns=140
 	set hlsearch
 	set linespace=2
 
@@ -63,6 +64,9 @@ let delimitMate_expand_cr = 1
 set updatetime=500
 
 let g:user_emmet_leader_key=','
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_mode='i'
 
 set nolist
 set listchars=eol:¶,tab:⇥\ ,space:·
