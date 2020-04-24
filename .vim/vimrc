@@ -2,9 +2,10 @@
 set nocompatible
 
 set backspace=indent,eol,start
-set shiftwidth=4
+
 set noexpandtab
-	
+set tabstop=4
+set shiftwidth=4
 set autoindent
 
 if has("autocmd")
