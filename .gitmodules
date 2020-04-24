@@ -19,3 +19,6 @@
 [submodule ".vim/pack/vendor/start/delimitmate"]
 	path = .vim/pack/vendor/start/delimitmate
 	url = https://github.com/raimondi/delimitmate
+[submodule ".vim/pack/vendor/start/vim-two-firewatch"]
+	path = .vim/pack/vendor/start/vim-two-firewatch
+	url = https://github.com/rakr/vim-two-firewatch.git

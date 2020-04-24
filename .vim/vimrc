@@ -36,7 +36,7 @@ if has("gui_running")
 	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal columns=185
 endif
 
-colorscheme monokai
+colorscheme solarized8_high
 
 syntax on
 set ruler

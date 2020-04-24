@@ -1,0 +1,1 @@
+<html><body>You are being <a href="https://raw.githubusercontent.com/jaredgorski/SpaceCamp/master/colors/spacecamp_lite.vim">redirected</a>.</body></html>
