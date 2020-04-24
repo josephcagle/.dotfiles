@@ -5,16 +5,21 @@ set backspace=indent,eol,start
 set shiftwidth=4
 set noexpandtab
 	
+set autoindent
+
+if has("autocmd")
+  filetype plugin indent on
+endif
+
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 if has("gui_running")
-	syntax on
 	set hlsearch
 	colorscheme macvim
 	set bs=2
-	set ai
-	set ruler
-	set lsp=2
+	set linespace=2
 
+	" Try to get rid of middle-click-to-paste
 	nnoremap <MiddleMouse> <Nop>
 	nnoremap <2-MiddleMouse> <Nop>
 	nnoremap <3-MiddleMouse> <Nop>
@@ -25,24 +30,23 @@ if has("gui_running")
 	inoremap <3-MiddleMouse> <Nop>
 	inoremap <4-MiddleMouse> <Nop>
 
-	autocmd BufRead,BufNewFile *.md set filetype=markdown
 	autocmd BufRead,BufNewFile linuxclassnotes.md colorscheme slate
 	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal lbr
 	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal guifont=UbuntuMono-Regular:h18
 	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal columns=185
 endif
 
-set number
 colorscheme monokai
 
-" inoremap ii <Esc>
+syntax on
+set ruler
+set number
+
+"inoremap ii <Esc>
 inoremap jk <Esc>
 inoremap ja <Esc>ja
 inoremap jA <Esc>jA
 
-if has("autocmd")
-  filetype plugin indent on
-endif
 
 let g:comfortable_motion_friction = 200.0
 
