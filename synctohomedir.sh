@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ ! -f dotfiles.list ]; then
+    echo 'No dotfiles.list -- are you in the right directory?' >&2
+    exit 1
+fi
+
 echo 'Be sure to `git pull --recurse-submodules` the latest version if your version is behind.'
 echo "Copying files..."
 
@@ -9,8 +14,8 @@ for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
         continue
     fi
 
-    if [ -e ~/$dotfile -a $overwrite_all = 0 ]; then
-        echo -n 'Overwrite ~/'$dotfile'? (y/n/a) '
+    if [ -e $HOME/$dotfile -a $overwrite_all = 0 ]; then
+        echo -n 'Overwrite $HOME/'$dotfile'? (y/n/a) '
 	read -rn 1 response ; echo
 	case $response in
         *a*)

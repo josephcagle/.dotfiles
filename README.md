@@ -1,9 +1,10 @@
 # mydotfiles
 My custom Linux dotfiles
 
-## Installation / download
-Run `git clone --recurse-submodules https://github.com/DarthFloopy/mydotfiles.git` to download git submodules (e.g. vim plugins).
+## Download / Installation
+Run `git clone --recurse-submodules https://github.com/DarthFloopy/mydotfiles.git` to get all the files.
+Then, run ./synctohomedir.sh to copy files into your home directory.
 
 
-Note: This includes startup code for an OhMyZsh installation.
+*Note: These files include startup code for an OhMyZsh installation.*
 

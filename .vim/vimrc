@@ -1,6 +1,8 @@
 
 set nocompatible
 
+set backspace=indent,eol,start
+
 if has("gui_running")
 	syntax on
 	set hlsearch
