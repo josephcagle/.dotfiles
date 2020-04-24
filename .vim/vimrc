@@ -60,6 +60,10 @@ let g:airline_symbols.branch = '⎇ '
 
 let delimitMate_expand_cr = 1
 
+set updatetime=500
+
+let g:user_emmet_leader_key=','
+
 set nolist
 set listchars=eol:¶,tab:⇥\ ,space:·
 highlight NonText guibg=NONE ctermbg=NONE
