@@ -2,6 +2,9 @@
 set nocompatible
 
 set backspace=indent,eol,start
+set shiftwidth=4
+set noexpandtab
+	
 
 if has("gui_running")
 	syntax on
