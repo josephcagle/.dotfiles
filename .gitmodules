@@ -13,3 +13,9 @@
 [submodule ".vim/pack/vendor/start/vim-airline"]
 	path = .vim/pack/vendor/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/pack/vendor/start/vim-css-color"]
+	path = .vim/pack/vendor/start/vim-css-color
+	url = https://github.com/ap/vim-css-color
+[submodule ".vim/pack/vendor/start/delimitmate"]
+	path = .vim/pack/vendor/start/delimitmate
+	url = https://github.com/raimondi/delimitmate

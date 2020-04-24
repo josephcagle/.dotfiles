@@ -46,3 +46,4 @@ endif
 
 let g:comfortable_motion_friction = 200.0
 
+let delimitMate_expand_cr = 1
