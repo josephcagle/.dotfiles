@@ -15,9 +15,8 @@ endif
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 if has("gui_running")
+	set guifont=UbuntuMono-Regular:h16
 	set hlsearch
-	colorscheme macvim
-	set bs=2
 	set linespace=2
 
 	" Try to get rid of middle-click-to-paste
@@ -45,9 +44,10 @@ set number
 
 "inoremap ii <Esc>
 inoremap jk <Esc>
-inoremap ja <Esc>ja
+"inoremap ja <Esc>ja
 inoremap jA <Esc>jA
 
+" From here on is plugin config
 
 let g:comfortable_motion_friction = 200.0
 
