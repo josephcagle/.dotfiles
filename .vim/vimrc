@@ -51,4 +51,19 @@ inoremap jA <Esc>jA
 
 let g:comfortable_motion_friction = 200.0
 
+"let g:better_whitespace_enabled=0
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.branch = '⎇ '
+
 let delimitMate_expand_cr = 1
+
+set nolist
+set listchars=eol:¶,tab:⇥\ ,space:·
+highlight NonText guibg=NONE ctermbg=NONE
+highlight SpecialKey guibg=NONE ctermbg=NONE
+highlight Comment ctermfg=777 guifg=#aaaaaa
+
+
