@@ -15,18 +15,18 @@ for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
     fi
 
     if [ -e $HOME/$dotfile -a $overwrite_all = 0 ]; then
-        echo -n 'Overwrite $HOME/'$dotfile'? (y/n/a) '
-	read -rn 1 response ; echo
-	case $response in
+    echo -n 'Overwrite $HOME/'$dotfile'? ([y]es/[n]o/[a]ll) '
+    read -rn 1 response ; echo
+    case $response in
         *a*)
             overwrite_all=1
-	    ;;
-	*y*)
+        ;;
+    *y*)
             ;;
-	*)
-	    continue
-	    ;;
-	esac
+    *)
+        continue
+        ;;
+    esac
     fi
     rm -rf $HOME/$dotfile
     cp -rv $dotfile $HOME/$dotfile
