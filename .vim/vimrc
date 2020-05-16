@@ -56,7 +56,7 @@ set shellcmdflag=-l
 
 " From here on is plugin config
 
-let g:comfortable_motion_friction = 200.0
+let g:comfortable_motion_friction = 300.0
 
 "let g:better_whitespace_enabled=0
 
