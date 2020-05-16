@@ -15,7 +15,7 @@ endif
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 if has("gui_running")
-	set guifont=UbuntuMono-Regular:h16
+	set guifont=UbuntuMono-Bold:h16
 	set columns=140
 	set hlsearch
 	set linespace=2
