@@ -47,6 +47,7 @@ set number
 
 "inoremap ii <Esc>
 inoremap jk <Esc>
+inoremap kj <Esc>
 "inoremap ja <Esc>ja
 inoremap jA <Esc>jA
 inoremap jI <Esc>jI
