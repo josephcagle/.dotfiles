@@ -22,6 +22,12 @@ export EDITOR='vim'
 #    fi                           # it breaks `crontab -e`, so use just vim for now
 #fi
 
+if hash keychain 2>/dev/null ; then
+    eval `keychain --eval --agents ssh id_rsa`
+else
+    echo >&2 .myrc: program '`'keychain"'" not found
+fi
+
 # TODO: figure out terminal color settings
 # (this is copied from a .bashrc:)
 # set a fancy prompt (non-color, unless we know we "want" color)
