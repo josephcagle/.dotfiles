@@ -22,6 +22,7 @@ export EDITOR='vim'
 #    fi                           # it breaks `crontab -e`, so use just vim for now
 #fi
 
+# I got this program usage from https://www.funtoo.org/Keychain
 sshkeychain () {
     if hash keychain 2>/dev/null ; then
         eval `keychain --eval --agents ssh id_rsa`
