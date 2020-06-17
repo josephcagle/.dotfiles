@@ -58,7 +58,7 @@ inoremap jA <Esc>jA
 inoremap jI <Esc>jI
 
 set shell=bash
-set shellcmdflag=-l
+set shellcmdflag=-ic
 
 " From here on is plugin config
 
