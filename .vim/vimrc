@@ -50,6 +50,8 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
+set incsearch
+
 "inoremap ii <Esc>
 inoremap jk <Esc>
 inoremap kj <Esc>
