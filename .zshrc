@@ -1,18 +1,13 @@
 #!/bin/zsh
 # .zshrc - my zsh startup file
 
-# remove this when path setting is added to .myrc
-export PATH=$HOME/bin:$PATH
+# First, OMZ config, then normal zsh config
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
 # Disable security check
 ZSH_DISABLE_COMPFIX=true
-
-# Share history between concurrent sessions
-setopt INC_APPEND_HISTORY
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -115,6 +110,14 @@ ZSH_AUTOSUGGEST_HISTORY_IGNORE='cd *'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# remove this when path setting is added to .myrc
+export PATH=$HOME/bin:$PATH
+
+
+# Don't share history between concurrent sessions
+setopt APPEND_HISTORY
+setopt NO_SHARE_HISTORY
 
 . $HOME/.myrc
 
