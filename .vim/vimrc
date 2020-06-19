@@ -62,6 +62,8 @@ inoremap jI <Esc>jI
 set shell=bash
 set shellcmdflag=-ic
 
+set mouse=a
+
 " From here on is plugin config
 
 let g:comfortable_motion_friction = 300.0
