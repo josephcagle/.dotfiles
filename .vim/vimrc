@@ -31,12 +31,11 @@ if has("gui_running")
 	inoremap <3-MiddleMouse> <Nop>
 	inoremap <4-MiddleMouse> <Nop>
 
-	"autocmd BufRead,BufNewFile linuxclassnotes.md colorscheme slate
-	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal lbr
-	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal guifont=UbuntuMono-Regular:h18
-	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal columns=150
-	autocmd BufRead,BufNewFile linuxclassnotes.md colorscheme macvim
-	autocmd BufRead,BufNewFile linuxclassnotes.md setlocal background=dark
+	"autocmd BufRead,BufNewFile linuxclassnotes.md setlocal lbr
+	"autocmd BufRead,BufNewFile linuxclassnotes.md setlocal guifont=UbuntuMono-Regular:h18
+	"autocmd BufRead,BufNewFile linuxclassnotes.md setlocal columns=150
+	"autocmd BufRead,BufNewFile linuxclassnotes.md colorscheme macvim
+	"autocmd BufRead,BufNewFile linuxclassnotes.md setlocal background=dark
 endif
 
 colorscheme solarized8_high
