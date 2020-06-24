@@ -13,6 +13,7 @@ if has("autocmd")
 endif
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.md inoremap ``` ```<CR>```<Esc>O
 
 if has("gui_running")
 	set guifont=UbuntuMono-Bold:h16
