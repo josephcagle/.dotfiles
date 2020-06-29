@@ -9,5 +9,7 @@ To pull updates, run `git pull --recurse-submodules`.
 
 What is all this `--recurse-submodules` funny business, you ask? It's to download any git repos that are embedded in this repo (e.g., vim plugins I got from GitHub).
 
-*Note: These files include startup code for an OhMyZsh installation not included in this repo.*
+Notes:
+ - This repo includes my selected plugins and config for Vim. Please note that it isn't meant to work with any version earlier than Vim 8. (In other words, it's sorta kinda broken if you use Vim 7.)
+ - These files include startup code for an OhMyZsh installation not included in this repo.
 
