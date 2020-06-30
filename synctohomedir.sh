@@ -11,8 +11,10 @@ fi
 
 if [ x$SHUSH != x1 ]; then
     echo 'Be sure to `git pull --recurse-submodules` the latest version if your version is behind.'
-    echo "Copying files..."
 fi
+
+# TODO: figure out why this doesn't happen when this is run with ./install.sh
+echo "Copying files..."
 
 overwrite_all=0
 
