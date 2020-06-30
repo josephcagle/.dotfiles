@@ -14,6 +14,8 @@ if [ x$SHUSH != x1 ]; then
 fi
 
 # TODO: figure out why this doesn't happen when this is run with ./install.sh
+# TODO: figure out why this does happen... *sigh*
+# TODO: do more testing ig
 echo "Copying files..."
 
 overwrite_all=0
