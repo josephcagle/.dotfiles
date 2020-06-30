@@ -1,14 +1,25 @@
 #!/bin/bash
 
+if [ "$1" = "--shush" ]; then
+    SHUSH=1
+fi
+
 if [ ! -f dotfiles.list ]; then
     echo 'No dotfiles.list -- are you in the right directory?' >&2
     exit 1
 fi
 
-echo 'Be sure to `git pull --recurse-submodules` the latest version if your version is behind.'
-echo "Copying files..."
+if [ x$SHUSH != x1 ]; then
+    echo 'Be sure to `git pull --recurse-submodules` the latest version if your version is behind.'
+    echo "Copying files..."
+fi
 
 overwrite_all=0
+
+if [ x$SHUSH = x1 ]; then
+    overwrite_all=1
+fi
+
 for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
 #   There should be no .gitignore'd files in dotfiles.list
 #    if git check-ignore $dotfile ; then

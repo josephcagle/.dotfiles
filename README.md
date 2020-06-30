@@ -3,7 +3,7 @@ My custom Linux/Mac dotfiles
 
 ## Download / Installation
 Run `git clone --recurse-submodules https://github.com/DarthFloopy/mydotfiles.git` to get all the files.
-Then, run ./synctohomedir.sh to copy files into your home directory.
+Then, run `./synctohomedir.sh [--shush]` to copy files into your home directory. (The `--shush` option omits prompts and friendly make-sure-you-pulled-the-latest-version reminders.)
 
 To pull updates, run `git pull --recurse-submodules`.
 
