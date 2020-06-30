@@ -10,9 +10,10 @@ echo "Copying files..."
 
 overwrite_all=0
 for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
-    if git check-ignore $dotfile ; then
-        continue
-    fi
+#   There should be no .gitignore'd files in dotfiles.list
+#    if git check-ignore $dotfile ; then
+#        continue
+#    fi
 
     if [ -e $HOME/$dotfile -a $overwrite_all = 0 ]; then
         echo -n 'Overwrite $HOME/'$dotfile'? ([y]es/[n]o/[a]ll) '
@@ -32,6 +33,7 @@ for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
     cp -rv $dotfile $HOME/$dotfile
 done
 
+echo "All done!"
 
 # (Old script)
 
@@ -57,5 +59,4 @@ done
 #(cd $HOME/Programming/mydotfiles && exec ./synctohomedir.sh)
 #END
 
-echo "All done!"
 
