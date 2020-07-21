@@ -13,6 +13,8 @@ if has("autocmd")
 endif
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+" TO DO: consider set lbr for text files too
+autocmd BufRead,BufNewFile *.md set linebreak
 autocmd BufRead,BufNewFile *.md inoremap ``` ```<CR>```<Esc>O
 
 if has("gui_running")
