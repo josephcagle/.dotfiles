@@ -56,6 +56,8 @@ map <Space> <Nop>
 let mapleader = " "
 vnoremap <Leader>j :m '>+1<CR>gv=gv
 vnoremap <Leader>k :m '<-2<CR>gv=gv
+nnoremap <Leader>a GVgg
+autocmd Filetype text nnoremap <Space>= vipJA.<Backspace><Esc>
 
 "inoremap ii <Esc>
 inoremap jk <Esc>
@@ -79,6 +81,7 @@ if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
 let g:airline_symbols.branch = '⎇ '
+let g:airline_symbols.maxlinenr = ''
 
 let delimitMate_expand_cr = 1
 
