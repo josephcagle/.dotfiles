@@ -66,6 +66,8 @@ inoremap kj <Esc>
 inoremap jA <Esc>jA
 inoremap jI <Esc>jI
 
+vnoremap v <Esc>
+
 set shell=bash
 set shellcmdflag=-ic
 
