@@ -80,8 +80,6 @@ inoremap jI <Esc>jI
 
 vnoremap v <Esc>
 
-nnoremap <C-s> :wa<CR>
-
 set shell=bash
 set shellcmdflag=-ic
 
