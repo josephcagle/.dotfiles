@@ -69,7 +69,7 @@ endfunction
 nnoremap <Leader>b :call ToggleDarkBackground()<CR>
 
 nnoremap <Space>= <Nop>
-autocmd Filetype text nnoremap <Space>= vipJA.<Backspace><Esc>
+autocmd Filetype text,markdown nnoremap <Space>= vipJA.<Backspace><Esc>
 
 "inoremap ii <Esc>
 inoremap jk <Esc>
