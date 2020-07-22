@@ -31,6 +31,8 @@ sshkeychain () {
     fi
 }
 
+sshkeychain
+
 # TODO: figure out terminal color settings
 # (this is copied from a .bashrc:)
 # set a fancy prompt (non-color, unless we know we "want" color)
