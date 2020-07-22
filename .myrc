@@ -30,8 +30,7 @@ sshkeychain () {
         echo >&2 .myrc: program '`'keychain"'" not found
     fi
 }
-
-sshkeychain
+# This function will be run for interactive login shells in .bashrc and .zshrc
 
 # TODO: figure out terminal color settings
 # (this is copied from a .bashrc:)

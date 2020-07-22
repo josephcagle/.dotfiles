@@ -10,6 +10,8 @@ PATH=$PATH:$HOME/bin
 
 
 . $HOME/.myrc
+# Run the ssh keychain function if we are in an interactive login shell
+[[ $- == *i* ]] && shopt -q login_shell && sshkeychain
 
 # append to the history file; don't overwrite it
 shopt -s histappend

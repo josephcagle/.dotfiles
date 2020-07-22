@@ -120,6 +120,8 @@ setopt APPEND_HISTORY
 setopt NO_SHARE_HISTORY
 
 . $HOME/.myrc
+# Run the ssh keychain function if we are in an interactive login shell
+[[ $- == *i* ]] && [[ -o login ]] && sshkeychain
 
 #export PS1="$(_user_host) $(git_prompt_info)
 #${_current_dir}%{$fg[$CARETCOLOR]%}▶%{$resetcolor%} "
