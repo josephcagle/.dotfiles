@@ -55,8 +55,8 @@ set incsearch
 
 map <Space> <Nop>
 let mapleader = " "
-vnoremap <Leader>j :m '>+1<CR>gv=gv
-vnoremap <Leader>k :m '<-2<CR>gv=gv
+vnoremap <Leader>j :m '>+1<CR>gv
+vnoremap <Leader>k :m '<-2<CR>gv
 nnoremap <Leader>a GVgg
 nnoremap <Leader>l :set invlist<CR>
 nnoremap <Leader>s :w<CR>
