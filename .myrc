@@ -27,7 +27,7 @@ sshkeychain () {
     if hash keychain 2>/dev/null ; then
         eval `keychain --eval --agents ssh id_rsa`
     else
-        echo >&2 warning: .myrc: program '`'keychain"'" not found";" not using it
+        echo >&2 .myrc: warning: program '`'keychain"'" not found";" not using it
     fi
 }
 # This function will be run for interactive login shells in .bashrc and .zshrc
