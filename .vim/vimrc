@@ -43,6 +43,7 @@ else
 endif
 
 syntax on
+set display=lastline
 set ruler
 set number relativenumber
 augroup numbertoggle
