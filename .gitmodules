@@ -19,12 +19,12 @@
 [submodule ".vim/pack/vendor/start/delimitmate"]
 	path = .vim/pack/vendor/start/delimitmate
 	url = https://github.com/raimondi/delimitmate
-[submodule ".vim/pack/vendor/start/vim-two-firewatch"]
-	path = .vim/pack/vendor/start/vim-two-firewatch
-	url = https://github.com/rakr/vim-two-firewatch.git
 [submodule ".vim/pack/vendor/start/vim-gitgutter"]
 	path = .vim/pack/vendor/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
 [submodule ".vim/pack/vendor/start/emmet-vim"]
 	path = .vim/pack/vendor/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule ".vim/pack/vendor/start/vim-one"]
+	path = .vim/pack/vendor/start/vim-one
+	url = https://github.com/rakr/vim-one.git
