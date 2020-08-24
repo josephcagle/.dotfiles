@@ -36,11 +36,7 @@ if has("gui_running")
 endif
 
 colorscheme solarized8_high
-if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
-  set background=dark
-else
-  set background=light
-endif
+set background=dark
 
 syntax on
 set display=lastline
