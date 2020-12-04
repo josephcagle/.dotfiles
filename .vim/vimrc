@@ -50,6 +50,9 @@ augroup END
 set cursorline
 set incsearch
 
+set splitbelow
+set splitright
+
 map <Space> <Nop>
 let mapleader = " "
 vnoremap <Leader>j :m '>+1<CR>gv
