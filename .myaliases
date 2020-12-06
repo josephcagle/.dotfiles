@@ -45,6 +45,7 @@ mkcd () {
 
 alias gs='git status'
 alias gA='git add -A'
+alias gd='git diff'
 
 alias info='info --vi-keys'
 
