@@ -129,6 +129,10 @@ setopt NO_SHARE_HISTORY
 export PS1='[$(date +%k:%M:%S)] '"${_current_dir}%{$fg[$CARETCOLOR]%}"$'\u25b6'"%{$resetcolor%} "
 export PS2="%{$fg[$CARETCOLOR]%}"$'\u25c0'"%{$resetcolor%} "
 
+# Mac iTerm2 integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
 help () {
     bash -c "help $*"
 }
