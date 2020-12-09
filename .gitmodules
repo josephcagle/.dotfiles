@@ -31,3 +31,6 @@
 [submodule ".mydotfiles_misc/zsh-syntax-highlighting"]
 	path = .mydotfiles_misc/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".mydotfiles_misc/pure"]
+	path = .mydotfiles_misc/pure
+	url = https://github.com/DarthFloopy/pure

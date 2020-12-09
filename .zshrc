@@ -124,6 +124,12 @@ setopt NO_SHARE_HISTORY
 # Run the ssh keychain function if we are in an interactive login shell
 [[ $- == *i* ]] && [[ -o login ]] && sshkeychain
 
+# Use "pure" theme, customizing colors
+fpath+=$HOME/.mydotfiles_misc/pure
+autoload -U promptinit; promptinit
+prompt pure
+zstyle :prompt:pure:user color green
+zstyle :prompt:pure:host color cyan
 
 # command syntax highlighting
 source "$HOME/.mydotfiles_misc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
