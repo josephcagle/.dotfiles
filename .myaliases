@@ -54,4 +54,5 @@ hl () {
 }
 
 alias dunnet='emacs -batch -l dunnet'
+alias note='cat > /dev/null'
 
