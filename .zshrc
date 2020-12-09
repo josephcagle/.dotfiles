@@ -129,6 +129,14 @@ fpath+=$HOME/.mydotfiles_misc/pure
 autoload -U promptinit; promptinit
 prompt pure
 
+# more prompt customization
+# TODO: find out how to turn this off when "pure" prompt displays
+# the same info (i.e. in ssh sessions)
+
+#if [[ ! "$PS1" == *"%n"* ]]; then
+    RPROMPT="%n@%m"
+#fi
+
 # command syntax highlighting
 source "$HOME/.mydotfiles_misc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
