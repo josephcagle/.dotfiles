@@ -134,7 +134,7 @@ prompt pure
 # the same info (i.e. in ssh sessions)
 
 #if [[ ! "$PS1" == *"%n"* ]]; then
-    RPROMPT="%n@%m"
+    RPROMPT="%F{blue}%n%F{default}@%F{cyan}%m%F{default}"
 #fi
 
 # command syntax highlighting
