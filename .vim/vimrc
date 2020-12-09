@@ -53,11 +53,16 @@ augroup END
 set cursorline
 set incsearch
 
+if &t_Co > 128
+    set termguicolors
+endif
 colorscheme solarized8_high
 set background=dark
 
 set splitbelow
 set splitright
+
+set scrolloff=5
 
 map <Space> <Nop>
 let mapleader = " "
