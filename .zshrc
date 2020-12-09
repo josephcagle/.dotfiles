@@ -129,6 +129,9 @@ fpath+=$HOME/.mydotfiles_misc/pure
 autoload -U promptinit; promptinit
 prompt pure
 
+# command syntax highlighting
+source "$HOME/.mydotfiles_misc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
 # Mac iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
