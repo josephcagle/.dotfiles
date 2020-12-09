@@ -124,18 +124,6 @@ setopt NO_SHARE_HISTORY
 # Run the ssh keychain function if we are in an interactive login shell
 [[ $- == *i* ]] && [[ -o login ]] && sshkeychain
 
-# Use "pure" theme
-fpath+=$HOME/.mydotfiles_misc/pure
-autoload -U promptinit; promptinit
-prompt pure
-
-# more prompt customization
-# TODO: find out how to turn this off when "pure" prompt displays
-# the same info (i.e. in ssh sessions)
-
-#if [[ ! "$PS1" == *"%n"* ]]; then
-    RPROMPT="%F{blue}%n%F{default}@%F{cyan}%m%F{default}"
-#fi
 
 # command syntax highlighting
 source "$HOME/.mydotfiles_misc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
