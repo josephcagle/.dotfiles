@@ -28,3 +28,6 @@
 [submodule ".vim/pack/vendor/start/vim-one"]
 	path = .vim/pack/vendor/start/vim-one
 	url = https://github.com/rakr/vim-one.git
+[submodule ".mydotfiles_misc/pure"]
+	path = .mydotfiles_misc/pure
+	url = https://github.com/sindresorhus/pure.git

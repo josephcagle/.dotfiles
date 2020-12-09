@@ -13,7 +13,8 @@ ZSH_DISABLE_COMPFIX=true
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME=""
+# Use "pure" theme (config at bottom)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -123,11 +124,10 @@ setopt NO_SHARE_HISTORY
 # Run the ssh keychain function if we are in an interactive login shell
 [[ $- == *i* ]] && [[ -o login ]] && sshkeychain
 
-#export PS1="$(_user_host) $(git_prompt_info)
-#${_current_dir}%{$fg[$CARETCOLOR]%}▶%{$resetcolor%} "
-
-export PS1='[$(date +%k:%M:%S)] '"${_current_dir}%{$fg[$CARETCOLOR]%}"$'\u25b6'"%{$resetcolor%} "
-export PS2="%{$fg[$CARETCOLOR]%}"$'\u25c0'"%{$resetcolor%} "
+# Use "pure" theme
+fpath+=$HOME/.mydotfiles_misc/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 # Mac iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
