@@ -66,10 +66,14 @@ set scrolloff=5
 
 map <Space> <Nop>
 let mapleader = " "
-vnoremap <Leader>j :m '>+1<CR>gv
-vnoremap <Leader>k :m '<-2<CR>gv
+nnoremap <Leader>h <C-w>h
+" Add a <Leader>hh mapping to short-circut various git plugin mappings
+nnoremap <Leader>hh <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 nnoremap <Leader>a GVgg
-nnoremap <Leader>l :set invlist<CR>
+nnoremap <Leader>. :set invlist<CR>
 nnoremap <Leader>s :w<CR>
 function ToggleDarkBackground()
 	if &background == 'dark'
@@ -79,6 +83,8 @@ function ToggleDarkBackground()
 	endif
 endfunction
 nnoremap <Leader>b :call ToggleDarkBackground()<CR>
+nnoremap <silent> <Leader>nf :NERDTreeFind<CR>
+nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
 
 nnoremap <Space>= <Nop>
 autocmd Filetype text,markdown nnoremap <Space>= vipJA.<Backspace><Esc>
@@ -91,6 +97,8 @@ inoremap jA <Esc>jA
 inoremap jI <Esc>jI
 
 vnoremap v <Esc>
+
+set timeoutlen=400
 
 set shell=bash
 set shellcmdflag=-ic
