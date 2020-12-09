@@ -35,8 +35,11 @@ if has("gui_running")
 	inoremap <4-MiddleMouse> <Nop>
 endif
 
-colorscheme solarized8_high
-set background=dark
+set nolist
+set listchars=eol:¶,tab:⇥\ ,space:·
+highlight NonText guibg=NONE ctermbg=NONE
+highlight SpecialKey guibg=NONE ctermbg=NONE
+highlight Comment ctermfg=777 guifg=#aaaaaa
 
 syntax on
 set display=lastline
@@ -49,6 +52,9 @@ augroup numbertoggle
 augroup END
 set cursorline
 set incsearch
+
+colorscheme solarized8_high
+set background=dark
 
 set splitbelow
 set splitright
@@ -106,11 +112,5 @@ let g:user_emmet_leader_key=','
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 let g:user_emmet_mode='i'
-
-set nolist
-set listchars=eol:¶,tab:⇥\ ,space:·
-highlight NonText guibg=NONE ctermbg=NONE
-highlight SpecialKey guibg=NONE ctermbg=NONE
-highlight Comment ctermfg=777 guifg=#aaaaaa
 
 
