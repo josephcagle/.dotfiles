@@ -43,6 +43,9 @@ mkcd () {
     mkdir -p "$1" && cd "$1" ;
 }
 
+# if nvim installed, use that
+type nvim && alias vim=nvim
+
 alias vzf='vim $(fzf)'
 
 alias gs='git status'
