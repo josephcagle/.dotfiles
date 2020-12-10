@@ -133,6 +133,19 @@ zstyle :prompt:pure:host color cyan
 
 # command syntax highlighting
 source "$HOME/.mydotfiles_misc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[command]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[comment]='fg=grey,bold'
+ZSH_HIGHLIGHT_STYLES[command-substitution]='fg=none'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=blue'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=blue'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=blue'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=blue'
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=cyan'
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=cyan'
 
 # Mac iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
