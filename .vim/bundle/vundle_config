@@ -19,6 +19,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/emmet-vim'
 Plugin 'rakr/vim-one'
 Plugin 'valloric/youcompleteme'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 
 call vundle#end()
