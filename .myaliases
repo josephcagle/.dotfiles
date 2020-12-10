@@ -43,9 +43,17 @@ mkcd () {
     mkdir -p "$1" && cd "$1" ;
 }
 
+alias vzf='vim $(fzf)'
+
 alias gs='git status'
-alias gA='git add -A'
+alias ga='git add'
+alias gaa='git add -A'
 alias gd='git diff'
+alias gdc='git diff --cached'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
+alias gp='git push'
 
 alias info='info --vi-keys'
 
