@@ -1,16 +1,20 @@
 
 set nocompatible
 
+"Vundle bootstrap
+if (! filereadable($HOME . '/.vim/bundle/Vundle.vim/.git/config') && confirm("Clone Vundle?", "Y\nn") == 1)
+    exec '!git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
+    echo 'Now you can run ":PluginInstall" to install all the plugins.'
+endif
+source ~/.vim/bundle/vundle_config
+
+
 set backspace=indent,eol,start
 
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
-
-if has("autocmd")
-	filetype plugin indent on
-endif
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 " TO DO: consider set lbr for text files too

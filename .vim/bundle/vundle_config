@@ -1,0 +1,24 @@
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'romainl/vim-cool'
+Plugin 'yuttie/comfortable-motion.vim'
+Plugin 'preservim/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'vim-airline/vim-airline'
+Plugin 'ap/vim-css-color'
+Plugin 'raimondi/delimitmate'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'mattn/emmet-vim'
+Plugin 'rakr/vim-one'
+
+call vundle#end()
+filetype plugin indent on
+
