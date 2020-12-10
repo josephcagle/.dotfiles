@@ -125,7 +125,7 @@ let g:airline_symbols.maxlinenr = ''
 
 let delimitMate_expand_cr = 1
 
-set updatetime=500
+set updatetime=2000
 
 let g:user_emmet_leader_key=','
 let g:user_emmet_install_global = 0
