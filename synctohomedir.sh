@@ -43,6 +43,7 @@ for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
         esac
     fi
     rm -rf $HOME/$dotfile
+    mkdir -p $(dirname $HOME/$dotfile)
     cp -rv $dotfile $HOME/$dotfile
 done
 

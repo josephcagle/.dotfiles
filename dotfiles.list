@@ -5,6 +5,7 @@
 .bash_logout
 .bash_profile
 .bashrc
+.config/nvim/init.vim
 .inputrc
 .myaliases
 .mydotfiles_misc
