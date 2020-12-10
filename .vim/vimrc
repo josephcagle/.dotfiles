@@ -79,6 +79,8 @@ nnoremap <Leader>l <C-w>l
 nnoremap <Leader>a GVgg
 nnoremap <Leader>. :set invlist<CR>
 nnoremap <Leader>s :w<CR>
+nnoremap <Leader>q ZZ
+nnoremap <Leader>Q ZZ
 function ToggleDarkBackground()
 	if &background == 'dark'
 		set background=light
