@@ -9,9 +9,10 @@ This repo contains my dotfiles and config files for Bash, ZSH and Vim, for Unix-
 Run `git clone --recurse-submodules https://github.com/DarthFloopy/mydotfiles.git` to get all the files.
 Then, `cd` into the repo folder (`mydotfiles`) and run `./synctohomedir.sh [--shush]` to copy files into your home directory. (The `--shush` option omits prompts and friendly make-sure-you-pulled-the-latest-version reminders.) To pull updates, run `git pull --recurse-submodules`.
 
-When you're done, log out and back in or `source` the `.bashrc` (assuming you're using bash) to use the new config.
-To use Vim plugins, follow the Vundle download prompt and plugin install instructions next time you start Vim.
-(I.e., hit enter to download Vundle and then run `:PluginInstall`.)
+ - When you're done, log out and back in or `source` the `.bashrc` (assuming you're using bash) to use the new config.
+ - To use Vim plugins, follow the Vundle download prompt and plugin install instructions next time you start Vim. (I.e., hit enter to download Vundle and then run `:PluginInstall`.)
+   - To use the YouCompleteMe Vim plugin, additionally follow the install instructions as outlined in the documentation: make sure `cmake`, `python`, `mono`, `go` and `nodejs` are installed, then `cd` to `~/.vim/bundle/YouCompleteMe` and run `python3 install.py --all`.
+ 
 
 What is all this `--recurse-submodules` funny business, you ask? It's to download any git repos that are embedded in this repo (e.g., ZSH plugins I got from GitHub).
 
