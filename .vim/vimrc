@@ -104,7 +104,7 @@ inoremap jI <Esc>jI
 
 vnoremap v <Esc>
 
-set timeoutlen=400
+set timeoutlen=2000
 
 set shell=bash
 set shellcmdflag=-ic
