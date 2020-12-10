@@ -11,7 +11,7 @@ Then, `cd` into the repo folder (`mydotfiles`) and run `./synctohomedir.sh [--sh
 
  - When you're done, log out and back in or `source` the `.bashrc` (assuming you're using bash) to use the new config.
  - To use Vim plugins, follow the Vundle download prompt and plugin install instructions next time you start Vim. (I.e., hit enter to download Vundle and then run `:PluginInstall`.)
-   - To use the YouCompleteMe Vim plugin, additionally follow the install instructions as outlined in the documentation: make sure `cmake`, `python`, `mono`, `go` and `nodejs` are installed, then `cd` to `~/.vim/bundle/YouCompleteMe` and run `python3 install.py --all`.
+   - To use the YouCompleteMe Vim plugin, additionally follow the install instructions as outlined in the YCM documentation: make sure `cmake`, `python`, `mono`, `go` and `nodejs` are installed, then `cd` to `~/.vim/bundle/YouCompleteMe` and run `python3 install.py --all`. (On second thought, you probably only want support for specific languages -- try just e.g. `--ts-completer` instead of `all` for just JS support.)
  
 
 What is all this `--recurse-submodules` funny business, you ask? It's to download any git repos that are embedded in this repo (e.g., ZSH plugins I got from GitHub).
