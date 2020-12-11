@@ -18,12 +18,12 @@ Plugin 'raimondi/delimitmate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/emmet-vim'
 Plugin 'rakr/vim-one'
-Plugin 'valloric/youcompleteme'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'neoclide/coc.nvim'
 
 call vundle#end()
 filetype plugin indent on

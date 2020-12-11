@@ -125,11 +125,12 @@ let g:airline_symbols.maxlinenr = ''
 
 let delimitMate_expand_cr = 1
 
-set updatetime=2000
+set updatetime=1000
 
 let g:user_emmet_leader_key=','
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 let g:user_emmet_mode='i'
 
+source ~/.vim/coc_config
 
