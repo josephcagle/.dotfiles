@@ -6,7 +6,7 @@ if (! filereadable($HOME . '/.vim/bundle/Vundle.vim/.git/config') && confirm("Cl
     exec '!git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
     echo 'Now you can run ":PluginInstall" to install all the plugins.'
 endif
-source ~/.vim/bundle/vundle_config
+source ~/.vim/vundle_config
 
 
 set backspace=indent,eol,start
