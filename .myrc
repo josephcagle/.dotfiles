@@ -12,8 +12,12 @@ HISTCONTROL=ignoreboth
 
 . $HOME/.myaliases
 
-export FZF_DEFAULT_COMMAND='2>/dev/null ag --hidden --ignore .git -g ""'
-export FZF_CTRL_T_COMMAND='2>/dev/null ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_COMMAND='2>/dev/null ag --hidden -g "" '\
+'--ignore .git '\
+'--ignore Library '\
+'--ignore Applications '\
+'--ignore .eclipse'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_DEFAULT_OPTS='--preview="head -$FZF_PREVIEW_LINES {} 2>/dev/null"'
 
 # I got this program usage from https://www.funtoo.org/Keychain
