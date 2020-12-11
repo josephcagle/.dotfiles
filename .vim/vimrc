@@ -70,9 +70,11 @@ set scrolloff=5
 
 map <Space> <Nop>
 let mapleader = " "
+" Unmap and remap some gitgutter mappings so <Leader>h works
+let g:gitgutter_map_keys = 0
+nmap [c <Plug>(GitGutterPrevHunk)
+nmap ]c <Plug>(GitGutterNextHunk)
 nnoremap <Leader>h <C-w>h
-" Add a <Leader>hh mapping to short-circut various git plugin mappings
-nnoremap <Leader>hh <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>l <C-w>l
