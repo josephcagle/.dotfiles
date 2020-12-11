@@ -11,6 +11,7 @@ Then, `cd` into the repo folder (`mydotfiles`) and run `./synctohomedir.sh [--sh
 
  - When you're done, log out and back in or `source` the `.bashrc` (assuming you're using bash) to use the new config.
  - To use Vim plugins, follow the Vundle download prompt and plugin install instructions next time you start Vim. (I.e., hit enter to download Vundle and then run `:PluginInstall`.)
+   - This seems slightly broken now for some reason. Just run those commands and it will work.
    - To use the CoC vim plugin, run `:CocInstall coc-marketplace` and then `:CocList marketplace` to install language-specific plugins. Right now I am using `coc-tsserver` and `coc-json` (JS/TS), `coc-html` and `coc-emmet` (HTML), `coc-css` (CSS) and `coc-metals` (Scala).
  
 
