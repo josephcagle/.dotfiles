@@ -113,6 +113,9 @@ set shellcmdflag=-ic
 
 set mouse=a
 
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
 " From here on is plugin config
 
 let g:comfortable_motion_friction = 300.0
