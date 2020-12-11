@@ -44,7 +44,7 @@ mkcd () {
 }
 
 # if nvim installed, use that
-type nvim && alias vim=nvim
+type nvim > /dev/null && alias vim=nvim
 
 alias vzf='vim $(fzf)'
 
