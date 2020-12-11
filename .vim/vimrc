@@ -65,8 +65,8 @@ set background=dark
 
 set splitbelow
 set splitright
-nnoremap ss :split<Space>
-nnoremap vv :vsplit<Space>
+nnoremap <Leader>\ :split<Space>
+nnoremap <Leader>- :vsplit<Space>
 
 set scrolloff=5
 
