@@ -26,6 +26,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'neoclide/coc.nvim'
 Plugin 'tpope/vim-commentary'
 Plugin 'chrisbra/improvedft'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 filetype plugin indent on

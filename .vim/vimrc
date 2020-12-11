@@ -139,5 +139,18 @@ let g:user_emmet_mode='i'
 
 let g:ft_improved_ignorecase = 1
 
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'*',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+
 source ~/.vim/coc_config
 
