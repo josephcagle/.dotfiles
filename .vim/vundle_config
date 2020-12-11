@@ -25,6 +25,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'neoclide/coc.nvim'
 Plugin 'tpope/vim-commentary'
+Plugin 'chrisbra/improvedft'
 
 call vundle#end()
 filetype plugin indent on
