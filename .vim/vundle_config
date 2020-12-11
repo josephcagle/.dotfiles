@@ -18,7 +18,6 @@ Plugin 'raimondi/delimitmate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/emmet-vim'
 Plugin 'rakr/vim-one'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
@@ -27,6 +26,8 @@ Plugin 'neoclide/coc.nvim'
 Plugin 'tpope/vim-commentary'
 Plugin 'chrisbra/improvedft'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on

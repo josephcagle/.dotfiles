@@ -154,5 +154,8 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
+" For fzf
+nnoremap <silent> <C-p> :Files!
+
 source ~/.vim/coc_config
 
