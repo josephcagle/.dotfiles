@@ -158,3 +158,6 @@ help () {
     bash -c "help $*"
 }
 
+# Use fzf bindings if installed
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

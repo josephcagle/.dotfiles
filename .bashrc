@@ -21,4 +21,6 @@ shopt -s histappend
 shopt -s checkwinsize
 # TODO: add this to .zshrc
 
+# Use fzf bindings if installed
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
