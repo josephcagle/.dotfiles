@@ -110,7 +110,11 @@ vnoremap v <Esc>
 
 set timeoutlen=2000
 
-set shell=bash
+if executable("zsh")
+    set shell=zsh
+else
+    set shell=bash
+endif
 set shellcmdflag=-ic
 
 set mouse=a
