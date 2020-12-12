@@ -112,9 +112,6 @@ ZSH_AUTOSUGGEST_HISTORY_IGNORE='cd *'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# remove this when path setting is added to .myrc
-export PATH=$HOME/bin:$PATH
-
 
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY

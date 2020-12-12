@@ -2,9 +2,6 @@
 # TODO: add color
 PS1='[$(date +%k:%M:%S) \u@\h] \w \$ '
 
-# remove this when path setting is added to .myrc
-PATH=$PATH:$HOME/bin
-
 # add bash-specific aliases
 . $HOME/.bash_aliases
 

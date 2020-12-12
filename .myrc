@@ -2,7 +2,31 @@
 
 export LANG=en_US.UTF-8
 
-#PATH=/something/or/other  # do this later
+calc_path() {
+    new_dirs="
+/usr/local/bin
+/usr/bin
+/bin
+/usr/local/sbin
+/usr/sbin
+/sbin
+"
+    # it's just new_dirs, but with colons between dir names
+    new_path=$(printf $new_dirs | tr '\n' ':' | sed -E 's/^:|:$//g')
+    # now add on any other dirs that are in the current path at the end
+    for current_path_dir in $(echo $PATH | tr ':' ' '); do
+        # (if the dir in the current path isn't in new list of dirs, ...)
+        if [[ ! $new_dirs == *"$current_path_dir"* ]]; then
+            new_path=$new_path:$current_path_dir
+        fi
+    done
+
+    PATH=$new_path
+    [[ -d $HOME/bin ]] && PATH=$HOME/bin:$PATH
+    [[ -d $HOME/.local/bin ]] && PATH=$HOME/.local/bin:$PATH
+}
+
+calc_path
 
 export HISTSIZE=100000
 export HISTFILESIZE=100000
