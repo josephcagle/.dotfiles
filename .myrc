@@ -11,15 +11,15 @@ calc_path() {
 /usr/sbin
 /sbin
 "
-    [[ -d $HOME/bin ]] && new_dirs="\n$HOME/bin$new_dirs"
-    [[ -d $HOME/.local/bin ]] && new_dirs="\n$HOME/.local/bin$new_dirs"
+    [[ -d $HOME/bin ]] && new_dirs=$'\n'$HOME/bin"$new_dirs"
+    [[ -d $HOME/.local/bin ]] && new_dirs=$'\n'$HOME/.local/bin"$new_dirs"
 
     # it's just new_dirs, but with colons between dir names
-    new_path=$(printf $new_dirs | tr '\n' ':' | sed -E 's/^:|:$//g')
+    new_path=$(echo -n "$new_dirs" | tr '\n' ':' | sed -E 's/^:|:$//g')
     # now add on any other dirs that are in the current path at the end
-    for current_path_dir in $(echo $PATH | tr ':' ' '); do
+    for current_path_dir in $(echo -n $PATH | tr ':' ' '); do
         # (if the dir in the current path isn't in new list of dirs, ...)
-        if [[ ! $new_dirs == *"$current_path_dir"* ]]; then
+        if [[ ! "$new_dirs" == *"$current_path_dir"* ]]; then
             new_path=$new_path:$current_path_dir
         fi
     done
