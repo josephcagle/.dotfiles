@@ -11,6 +11,9 @@ calc_path() {
 /usr/sbin
 /sbin
 "
+    [[ -d $HOME/bin ]] && new_dirs="\n$HOME/bin$new_dirs"
+    [[ -d $HOME/.local/bin ]] && new_dirs="\n$HOME/.local/bin$new_dirs"
+
     # it's just new_dirs, but with colons between dir names
     new_path=$(printf $new_dirs | tr '\n' ':' | sed -E 's/^:|:$//g')
     # now add on any other dirs that are in the current path at the end
@@ -22,8 +25,6 @@ calc_path() {
     done
 
     PATH=$new_path
-    [[ -d $HOME/bin ]] && PATH=$HOME/bin:$PATH
-    [[ -d $HOME/.local/bin ]] && PATH=$HOME/.local/bin:$PATH
 }
 
 calc_path
