@@ -28,6 +28,8 @@ Plugin 'chrisbra/improvedft'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'honza/vim-snippets'
+
 
 call vundle#end()
 filetype plugin indent on
