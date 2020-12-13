@@ -57,6 +57,9 @@ alias gc='git commit'
 alias gcm='git commit -m'
 alias gcam='git commit -am'
 alias gp='git push'
+alias 'git log'='git prettylog'
+# alias gl='git log'
+alias gl='git prettylog'
 
 alias info='info --vi-keys'
 

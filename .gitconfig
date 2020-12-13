@@ -1,0 +1,46 @@
+
+[user]
+    name = Joseph Cagle
+    email = joseph@josephcagle.com
+[init]
+    defaultBranch = master
+[core]
+    editor = vim
+    autocrlf = input
+    whitespace = -blank-at-eof,blank-at-eol,space-before-tab
+
+[alias]
+    prettylog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+[pull]
+    ff = only
+[merge]
+    ff = only
+    conflictstyle = diff3
+    ; TO DO
+    ; gpgSign = true
+    ; (also gpg-agent)
+[push]
+    default = simple
+    followTags = true
+[transfer]
+    fsckobjects = true
+
+[status]
+    showUntrackedFiles = all
+
+; some stuff copied from https://blog.scottnonnenberg.com/better-git-configuration/
+; TO DO
+[diff]
+    ; tool = icdiff
+[difftool]
+    ; prompt = false
+[difftool "icdiff"]
+    ; cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
