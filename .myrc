@@ -29,6 +29,8 @@ calc_path() {
 
 calc_path
 
+umask 022
+
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 
