@@ -60,6 +60,9 @@ alias gp='git push'
 alias 'git log'='git prettylog'
 # alias gl='git log'
 alias gl='git prettylog'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gb='git branch'
 
 alias info='info --vi-keys'
 
