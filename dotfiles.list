@@ -6,6 +6,8 @@
 .bash_profile
 .bashrc
 .config/nvim/init.vim
+.config/git/ignore
+.gitconfig
 .inputrc
 .myaliases
 .mydotfiles_misc
