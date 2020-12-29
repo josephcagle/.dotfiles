@@ -68,11 +68,6 @@ endif
 colorscheme solarized8_high
 set background=dark
 
-set splitbelow
-set splitright
-nnoremap <Leader>\ :split<Space>
-nnoremap <Leader>- :vsplit<Space>
-
 set scrolloff=5
 
 map <Space> <Nop>
@@ -103,6 +98,11 @@ nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
 
 nnoremap <Space>= <Nop>
 autocmd Filetype text,markdown nnoremap <Space>= vipJA.<Backspace><Esc>
+
+set splitbelow
+set splitright
+nnoremap <Leader>- :split<CR>
+nnoremap <Leader><Bslash> :vsplit<CR>
 
 "inoremap ii <Esc>
 inoremap jk <Esc>
