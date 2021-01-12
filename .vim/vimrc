@@ -61,6 +61,8 @@ augroup numbertoggle
 augroup END
 set cursorline
 set incsearch
+set ignorecase
+set smartcase
 
 if &t_Co > 128
     set termguicolors
@@ -140,7 +142,8 @@ endif
 let g:airline_symbols.branch = '⎇ '
 let g:airline_symbols.maxlinenr = ''
 
-let delimitMate_expand_cr = 1
+let delimitMate_expand_cr = 2
+let delimitMate_expand_space = 1
 
 set updatetime=1000
 
