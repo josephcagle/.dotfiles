@@ -102,6 +102,8 @@ nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Space>= <Nop>
 autocmd Filetype text,markdown nnoremap <Space>= vipJA.<Backspace><Esc>
 
+autocmd Filetype java nnoremap <Leader>O :CocCommand java.action.organizeImports<CR>
+
 set splitbelow
 set splitright
 nnoremap <Leader>- :split<CR>
