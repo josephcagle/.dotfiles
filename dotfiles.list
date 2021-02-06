@@ -12,5 +12,6 @@
 .myaliases
 .mydotfiles_misc
 .myrc
+.tmux.conf
 .zshrc
 
