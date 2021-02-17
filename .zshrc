@@ -153,7 +153,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
-bindkey -s '^ ' 'vim $(fzf)^M'
+#bindkey -s '^ ' 'vim $(fzf)^M'
 
 help () {
     bash -c "help $*"
