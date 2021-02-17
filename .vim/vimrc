@@ -54,6 +54,7 @@ syntax on
 set display=lastline
 set ruler
 set number relativenumber
+set signcolumn=auto:9
 augroup numbertoggle
     autocmd!
     autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -134,7 +135,7 @@ cnoremap <C-n> <Down>
 
 " From here on is plugin config
 
-let g:comfortable_motion_friction = 300.0
+let g:comfortable_motion_friction = 200.0
 
 "let g:better_whitespace_enabled=0
 
