@@ -27,21 +27,21 @@ autocmd BufRead,BufNewFile vundle_config set filetype=vim
 autocmd BufRead,BufNewFile coc_config set filetype=vim
 
 if has("gui_running")
-	set guifont=UbuntuMono-Bold:h16
-	set columns=140
-	set hlsearch
-	set linespace=2
+    set guifont=UbuntuMono-Bold:h16
+    set columns=140
+    set hlsearch
+    set linespace=2
 
-	" Try to get rid of middle-click-to-paste
-	nnoremap <MiddleMouse> <Nop>
-	nnoremap <2-MiddleMouse> <Nop>
-	nnoremap <3-MiddleMouse> <Nop>
-	nnoremap <4-MiddleMouse> <Nop>
+    " Try to get rid of middle-click-to-paste
+    nnoremap <MiddleMouse> <Nop>
+    nnoremap <2-MiddleMouse> <Nop>
+    nnoremap <3-MiddleMouse> <Nop>
+    nnoremap <4-MiddleMouse> <Nop>
 
-	inoremap <MiddleMouse> <Nop>
-	inoremap <2-MiddleMouse> <Nop>
-	inoremap <3-MiddleMouse> <Nop>
-	inoremap <4-MiddleMouse> <Nop>
+    inoremap <MiddleMouse> <Nop>
+    inoremap <2-MiddleMouse> <Nop>
+    inoremap <3-MiddleMouse> <Nop>
+    inoremap <4-MiddleMouse> <Nop>
 endif
 
 set nolist
@@ -55,9 +55,9 @@ set display=lastline
 set ruler
 set number relativenumber
 augroup numbertoggle
-	autocmd!
-	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-	autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 set cursorline
 set incsearch
@@ -89,11 +89,11 @@ nnoremap <silent> <Leader>q :wqa<CR>
 nnoremap <silent> <Leader>Q :qa!<CR>
 nnoremap <silent> <Leader>w :confirm q<CR>
 function ToggleDarkBackground()
-	if &background == 'dark'
-		set background=light
-	elseif &background == 'light'
-		set background=dark
-	endif
+    if &background == 'dark'
+        set background=light
+    elseif &background == 'light'
+        set background=dark
+    endif
 endfunction
 nnoremap <Leader>b :call ToggleDarkBackground()<CR>
 nnoremap <silent> <Leader>nf :NERDTreeFind<CR>
@@ -139,7 +139,7 @@ let g:comfortable_motion_friction = 300.0
 "let g:better_whitespace_enabled=0
 
 if !exists('g:airline_symbols')
-	let g:airline_symbols = {}
+    let g:airline_symbols = {}
 endif
 let g:airline_symbols.branch = '⎇ '
 let g:airline_symbols.maxlinenr = ''
