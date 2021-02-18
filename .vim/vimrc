@@ -52,6 +52,7 @@ highlight Comment ctermfg=777 guifg=#aaaaaa
 
 syntax on
 set display=lastline
+set nowrap
 set ruler
 set number relativenumber
 set signcolumn=auto:9
@@ -60,6 +61,7 @@ augroup numbertoggle
     autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
     autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+set colorcolumn=80
 set cursorline
 set incsearch
 set ignorecase
