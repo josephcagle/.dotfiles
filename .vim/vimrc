@@ -8,6 +8,8 @@ if (! filereadable($HOME . '/.vim/bundle/Vundle.vim/.git/config') && confirm("Cl
 endif
 source ~/.vim/vundle_config
 
+source ~/.vim/coc_config
+
 
 set backspace=indent,eol,start
 
@@ -201,6 +203,4 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 " For fzf
 nnoremap <silent> <C-p> :Files!<CR>
-
-source ~/.vim/coc_config
 
