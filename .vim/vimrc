@@ -114,10 +114,13 @@ nnoremap <Leader><Bslash> :vsplit<CR>
 
 "inoremap ii <Esc>
 inoremap jk <Esc>
-inoremap kj <Esc>
+"inoremap kj <Esc>
 "inoremap ja <Esc>ja
-inoremap jA <Esc>jA
-inoremap jI <Esc>jI
+"inoremap jA <Esc>jA
+"inoremap jI <Esc>jI
+
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
 
 vnoremap v <Esc>
 
