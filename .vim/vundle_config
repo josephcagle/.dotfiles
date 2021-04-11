@@ -29,6 +29,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'unblevable/quick-scope'
 Plugin 'AndrewRadev/tagalong.vim'
+Plugin 'nvim-treesitter/nvim-treesitter'
 
 call vundle#end()
 filetype plugin indent on
