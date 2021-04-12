@@ -55,7 +55,7 @@ set display=lastline
 set nowrap
 set ruler
 set number relativenumber
-set signcolumn=auto:9
+set signcolumn=yes:2
 augroup numbertoggle
     autocmd!
     autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
