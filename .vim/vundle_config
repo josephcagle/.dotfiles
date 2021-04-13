@@ -7,6 +7,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" plugins compatible with vim 7
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'romainl/vim-cool'
 Plugin 'yuttie/comfortable-motion.vim'
@@ -22,7 +23,6 @@ Plugin 'rakr/vim-one'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
-Plugin 'neoclide/coc.nvim'
 Plugin 'tpope/vim-commentary'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'junegunn/fzf'
@@ -30,10 +30,24 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'unblevable/quick-scope'
 Plugin 'AndrewRadev/tagalong.vim'
-Plugin 'nvim-treesitter/nvim-treesitter'
-Plugin 'p00f/nvim-ts-rainbow'
-Plugin 'machakann/vim-highlightedyank'
 Plugin 'myusuf3/numbers.vim'
+"
+" plugins compatible only with Vim 8
+if v:version > 799
+    Plugin 'machakann/vim-highlightedyank'
+    Plugin 'neoclide/coc.nvim'
+endif
+
+" plugins compatible only with nvim
+if has('nvim')
+    " nothing in particular
+endif
+
+" plugins compatible only with nvim >= 0.5
+if has('nvim-0.5')
+    Plugin 'nvim-treesitter/nvim-treesitter'
+    Plugin 'p00f/nvim-ts-rainbow'
+endif
 
 call vundle#end()
 filetype plugin indent on
