@@ -132,7 +132,7 @@ if executable("zsh")
 else
     set shell=bash
 endif
-set shellcmdflag=-ic
+set shellcmdflag=-c
 
 set mouse=a
 
