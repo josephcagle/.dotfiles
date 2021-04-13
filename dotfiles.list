@@ -3,7 +3,6 @@
 .vim/vimrc
 .vim/coc_config
 .vim/vundle_config
-.vim/colors
 .bash_aliases
 .bash_logout
 .bash_profile

@@ -7,6 +7,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'lifepillar/vim-solarized8'
 Plugin 'romainl/vim-cool'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'preservim/nerdtree'
