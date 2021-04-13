@@ -3,6 +3,15 @@
 
 # First, OMZ config, then normal zsh config
 
+# is omz installed?
+if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+    # install omz
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    # put this file back
+    mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc
+    return
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -74,7 +83,7 @@ DISABLE_UPDATE_PROMPT="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages)
+plugins=(colored-man-pages fzf)
 #        brew git web-search npm zsh-autosuggestions
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 ZSH_AUTOCORRECT_BUFFER_MAX_SIZE=30
