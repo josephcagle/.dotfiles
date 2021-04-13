@@ -9,6 +9,7 @@
 .bashrc
 .config/alacritty/alacritty.yml
 .config/nvim/init.vim
+.config/nvim/treesitter_config.vim
 .config/git/ignore
 .gitconfig
 .inputrc
