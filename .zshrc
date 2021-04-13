@@ -5,6 +5,10 @@
 
 # is omz installed?
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+    echo
+    echo "Now installing OMZ. When it's done, hit Ctrl-d twice"
+    echo -n "and then log back in.  [OK] >> "
+    read -r
     # install omz
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     # put this file back
