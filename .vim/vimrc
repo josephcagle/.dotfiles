@@ -123,7 +123,7 @@ inoremap <C-e> <End>
 
 vnoremap v <Esc>
 
-set timeoutlen=2000
+set timeoutlen=1000
 
 if executable("zsh")
     set shell=zsh
