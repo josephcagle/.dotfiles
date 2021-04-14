@@ -103,6 +103,14 @@ nnoremap <Leader>b :call ToggleDarkBackground()<CR>
 nnoremap <silent> <Leader>nf :NERDTreeFind<CR>
 nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
 
+" quick fix list mappings
+nnoremap <silent> <Leader>cn :cnext<CR>
+nnoremap <silent> <Leader>cp :cprev<CR>
+nnoremap <silent> <Leader>co :copen<CR>
+nnoremap <silent> <Leader>cln :lnext<CR>
+nnoremap <silent> <Leader>clp :cprev<CR>
+nnoremap <silent> <Leader>clo :lopen<CR>
+
 nnoremap <Space>= <Nop>
 autocmd Filetype text,markdown nnoremap <Space>= vipJA.<Backspace><Esc>
 
