@@ -17,14 +17,16 @@ set shiftwidth=4
 set autoindent
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
-" TO DO: consider set lbr for text files too
 autocmd FileType markdown set linebreak
+autocmd FileType text set linebreak
 autocmd FileType markdown inoremap ``` ```<CR>```<Esc>O
 
 autocmd BufRead,BufNewFile .myrc      set filetype=sh
 autocmd BufRead,BufNewFile .myaliases set filetype=sh
 autocmd BufRead,BufNewFile vundle_config set filetype=vim
 autocmd BufRead,BufNewFile coc_config set filetype=vim
+
+autocmd BufRead,BufNewFile *.nvim set filetype=vim
 
 if has("gui_running")
     set guifont=UbuntuMono-Bold:h16
