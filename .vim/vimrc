@@ -57,9 +57,7 @@ set display=lastline
 set nowrap
 set ruler
 set number relativenumber
-if has('signcolumn')
-    set signcolumn=yes:2
-endif
+set signcolumn=yes:2
 set colorcolumn=80
 set cursorline
 set incsearch
