@@ -31,6 +31,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'unblevable/quick-scope'
 Plugin 'AndrewRadev/tagalong.vim'
 Plugin 'myusuf3/numbers.vim'
+Plugin 'preservim/tagbar'
 "
 " plugins compatible only with Vim 8
 if v:version > 799

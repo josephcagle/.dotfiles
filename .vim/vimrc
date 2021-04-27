@@ -228,5 +228,15 @@ let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3
 " For fzf
 nnoremap <silent> <C-p> :Files!<CR>
 
+nmap <silent> <Leader>tt :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
+let g:tagbar_compact = 1
+let g:tagbar_indent = 1
+let g:tagbar_show_data_type = 1
+let g:tagbar_show_tag_linenumbers = 1
+let g:tagbar_foldlevel = 2
+let g:tagbar_autoshowtag = 1
+
 source ~/.vim/coc_config
 
