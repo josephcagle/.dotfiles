@@ -222,6 +222,9 @@ let g:qs_max_chars=150
 
 let g:highlightedyank_highlight_duration = 200
 
+" this is just the default settings + 'help'
+let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'help']
+
 " For fzf
 nnoremap <silent> <C-p> :Files!<CR>
 
