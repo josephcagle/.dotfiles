@@ -201,6 +201,10 @@ let g:user_emmet_mode='i'
 let g:ft_improved_ignorecase = 1
 
 autocmd FileType nerdtree set signcolumn=no
+" Exit Vim if NERDTree is the only window left. (copied from NERDTree readme)
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1
+    \ && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'*',
                 \ 'Staged'    :'✚',
