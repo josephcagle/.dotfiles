@@ -238,5 +238,11 @@ let g:tagbar_show_tag_linenumbers = 1
 let g:tagbar_foldlevel = 2
 let g:tagbar_autoshowtag = 1
 
+" Disable devicons
+" (user should enable this when they have installed a patched font)
+" (https://github.com/ryanoasis/vim-devicons)
+" (https://github.com/ryanoasis/nerd-fonts)
+let g:webdevicons_enable = 0
+
 source ~/.vim/coc_config
 
