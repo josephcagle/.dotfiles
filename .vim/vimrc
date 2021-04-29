@@ -200,6 +200,7 @@ let g:user_emmet_mode='i'
 
 let g:ft_improved_ignorecase = 1
 
+autocmd FileType nerdtree set signcolumn=no
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'*',
                 \ 'Staged'    :'✚',
