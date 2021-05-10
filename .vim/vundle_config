@@ -37,6 +37,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
 Plugin 'kana/vim-textobj-entire'
 Plugin 'terryma/vim-expand-region'
+Plugin 'matze/vim-move'
 
 " plugins compatible only with Vim 8
 if v:version > 799
