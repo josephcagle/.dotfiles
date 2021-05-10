@@ -33,7 +33,11 @@ Plugin 'AndrewRadev/tagalong.vim'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'preservim/tagbar'
 Plugin 'ryanoasis/vim-devicons'
-"
+Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-line'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'terryma/vim-expand-region'
+
 " plugins compatible only with Vim 8
 if v:version > 799
     Plugin 'machakann/vim-highlightedyank'
