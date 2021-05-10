@@ -87,7 +87,7 @@ DISABLE_UPDATE_PROMPT="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages fzf)
+plugins=(colored-man-pages fzf zsh-autosuggestions)
 #        brew git web-search npm zsh-autosuggestions
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 ZSH_AUTOCORRECT_BUFFER_MAX_SIZE=30
