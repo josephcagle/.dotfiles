@@ -78,10 +78,6 @@ set scrolloff=5
 
 map <Space> <Nop>
 let mapleader = " "
-" Unmap and remap some gitgutter mappings so <Leader>h works
-let g:gitgutter_map_keys = 0
-nmap [c <Plug>(GitGutterPrevHunk)
-nmap ]c <Plug>(GitGutterNextHunk)
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
@@ -199,6 +195,12 @@ autocmd FileType html,css EmmetInstall
 let g:user_emmet_mode='i'
 
 let g:ft_improved_ignorecase = 1
+
+nmap <Leader>gu <Plug>(GitGutterUndoHunk)
+" Unmap and remap some gitgutter mappings so <Leader>h works
+let g:gitgutter_map_keys = 0
+nmap [c <Plug>(GitGutterPrevHunk)
+nmap ]c <Plug>(GitGutterNextHunk)
 
 autocmd FileType nerdtree set signcolumn=no
 " Exit Vim if NERDTree is the only window left. (copied from NERDTree readme)
