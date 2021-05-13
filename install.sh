@@ -14,7 +14,7 @@ if [ x$SHUSH != x1 ]; then
 fi
 
 
-echo "Copying files..."
+echo "Symlinking files..."
 
 overwrite_all=0
 
@@ -29,7 +29,7 @@ for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
 #    fi
 
     if [ -e $HOME/$dotfile -a $overwrite_all = 0 ]; then
-        echo -n 'Overwrite $HOME/'$dotfile'? ([y]es/[n]o/[a]ll) '
+        echo -n 'Replace $HOME/'$dotfile'? ([y]es/[n]o/[a]ll) '
         read -rn 1 response ; echo
         case $response in
         *a*)
@@ -42,9 +42,9 @@ for dotfile in $(cat dotfiles.list | grep -v '^#') ; do
         ;;
         esac
     fi
-    rm -rf $HOME/$dotfile
     mkdir -p $(dirname $HOME/$dotfile)
-    cp -rv $dotfile $HOME/$dotfile
+    echo "ln -sF $(pwd)/$dotfile $HOME/$dotfile"
+    ln -sF $(pwd)/$dotfile $HOME/$dotfile
 done
 
 echo "All done!"
