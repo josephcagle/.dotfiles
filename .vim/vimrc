@@ -57,7 +57,13 @@ set display=lastline
 set nowrap
 set ruler
 set number relativenumber
-set signcolumn=yes:2
+if has('signs')
+    if has('nvim')
+        set signcolumn=yes:2
+    else
+        set signcolumn=auto
+    endif
+endif
 set colorcolumn=80
 set cursorline
 set incsearch
