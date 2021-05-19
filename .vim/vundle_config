@@ -48,7 +48,7 @@ endif
 
 " plugins compatible only with nvim
 if has('nvim')
-    " nothing in particular
+    Plugin 'nacro90/numb.nvim'
 endif
 
 " plugins compatible only with nvim >= 0.5
@@ -58,5 +58,10 @@ if has('nvim-0.5')
 endif
 
 call vundle#end()
+
 filetype plugin indent on
+
+if has('nvim')
+    lua require('numb').setup()
+endif
 
