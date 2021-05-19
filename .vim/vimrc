@@ -253,6 +253,28 @@ let g:tagbar_show_tag_linenumbers = 1
 let g:tagbar_foldlevel = 2
 let g:tagbar_autoshowtag = 1
 
+" vim-expand-region config
+let g:expand_region_text_objects = {
+      \ 'iw'  :0,
+      \ 'iW'  :0,
+      \ 'i"'  :0,
+      \ 'a"'  :0,
+      \ 'i''' :0,
+      \ 'a''' :0,
+      \ 'i]'  :1,
+      \ 'a]'  :1,
+      \ 'ib'  :1,
+      \ 'ab'  :1,
+      \ 'iB'  :1,
+      \ 'aB'  :1,
+      \ 'il'  :0,
+      \ 'al'  :0,
+      \ 'ip'  :0,
+      \ 'ii'  :0,
+      \ 'ie'  :0,
+      \ 'ae'  :0,
+      \ }
+
 " Disable devicons
 " (user should enable this when they have installed a patched font)
 " (https://github.com/ryanoasis/vim-devicons)
