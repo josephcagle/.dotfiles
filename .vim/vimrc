@@ -77,7 +77,7 @@ set foldlevelstart=99
 if &t_Co > 128
     set termguicolors
 endif
-colorscheme solarized8_high
+colorscheme solarized8
 set background=dark
 
 set scrolloff=5
