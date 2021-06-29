@@ -198,8 +198,11 @@ set updatetime=1000
 
 let g:user_emmet_leader_key=','
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css,scss,sass EmmetInstall
 let g:user_emmet_mode='i'
+
+" for coc-css
+autocmd FileType scss setl iskeyword+=@-@,-,%
 
 let g:ft_improved_ignorecase = 1
 
