@@ -81,6 +81,7 @@ colorscheme solarized8
 set background=dark
 
 set scrolloff=5
+set guicursor=a:block
 
 map <Space> <Nop>
 let mapleader = " "
