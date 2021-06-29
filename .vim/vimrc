@@ -114,9 +114,6 @@ nnoremap <silent> <Leader>cln :lnext<CR>
 nnoremap <silent> <Leader>clp :cprev<CR>
 nnoremap <silent> <Leader>clo :lopen<CR>
 
-nnoremap <Space>= <Nop>
-autocmd Filetype text,markdown nnoremap <Space>= vipJA.<Backspace><Esc>
-
 autocmd Filetype java nnoremap <Leader>O :CocCommand java.action.organizeImports<CR>
 
 set splitbelow
