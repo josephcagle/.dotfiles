@@ -1,6 +1,9 @@
 #!/bin/zsh
 # .zshrc - my zsh startup file
 
+# for zsh profiling
+[[ -f $HOME/.profilezsh ]] && zmodload zsh/zprof
+
 # First, OMZ config, then normal zsh config
 
 # is omz installed?
@@ -136,7 +139,9 @@ setopt NO_SHARE_HISTORY
 alias .='source'
 
 # Run the ssh keychain function if we are in an interactive login shell
-[[ $- == *i* ]] && [[ -o login ]] && sshkeychain
+# and if there is no ~/.nokeychain file
+[[ $- == *i* ]] && [[ -o login ]] && \
+    [[ ! -f $HOME/.nokeychain ]] && sshkeychain
 
 # Use "pure" theme, customizing colors
 fpath+=$HOME/.mydotfiles_misc/pure
@@ -174,4 +179,8 @@ help () {
 
 # Use fzf bindings if installed
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# for zsh profiling
+[[ -f $HOME/.profilezsh ]] && zprof
 

@@ -39,3 +39,10 @@ What is all this `--recurse-submodules` funny business, you ask? It's to
 download any git submodules that this repo uses (e.g., ZSH or Vim plugins I got
 from GitHub).
 
+
+## Configuration
+ - `touch ~/.nokeychain` to disable running `keychain` on login.
+ - `touch ~/.profilezsh` to profile zsh startup time on login.
+
+More documentation coming soon
+
