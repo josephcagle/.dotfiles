@@ -16,7 +16,10 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 
+" TODO: put filetype detection in separate file
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.mdx set filetype=markdown
+
 autocmd FileType markdown set linebreak
 autocmd FileType text set linebreak
 autocmd FileType markdown inoremap ``` ```<CR>```<Esc>O
