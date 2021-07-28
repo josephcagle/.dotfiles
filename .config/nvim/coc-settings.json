@@ -1,0 +1,14 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+    ],
+    "codeLens.enable": false,
+    "java.referencesCodeLens.enabled": true,
+    "java.implementationsCodeLens.enabled": true,
+    "java.completion.enabled": true,
+    "diagnostic.errorSign": "❱",
+    "diagnostic.warningSign": "❯",
+    "diagnostic.infoSign": "ℹ︎",
+    "diagnostic.messageTarget": "echo",
+    "list.selectedSignText": "✓ "
+}
+
