@@ -177,7 +177,7 @@ let g:airline_highlighting_cache = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
-let g:airline_symbols.branch = '⎇ '
+let g:airline_symbols.branch = ''
 let g:airline_symbols.maxlinenr = ''
 
 let g:airline_left_sep = ''
@@ -231,7 +231,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'*',
                 \ 'Staged'    :'✚',
                 \ 'Untracked' :'✭',
-                \ 'Renamed'   :'➜',
+                \ 'Renamed'   :'→',
                 \ 'Unmerged'  :'═',
                 \ 'Deleted'   :'✖',
                 \ 'Dirty'     :'✗',
