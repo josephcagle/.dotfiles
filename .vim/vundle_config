@@ -46,6 +46,7 @@ Plugin 'chaoren/vim-wordmotion'
 if v:version > 799
     Plugin 'machakann/vim-highlightedyank'
     Plugin 'neoclide/coc.nvim'
+    Plugin 'andrewradev/splitjoin.vim'
 endif
 
 " plugins compatible only with nvim
