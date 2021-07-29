@@ -40,7 +40,7 @@ Plugin 'kana/vim-textobj-indent'
 Plugin 'kana/vim-textobj-entire'
 Plugin 'terryma/vim-expand-region'
 Plugin 'matze/vim-move'
-Plugin 'chaoren/vim-wordmotion'
+" Plugin 'chaoren/vim-wordmotion'
 
 " plugins compatible only with Vim 8
 if v:version > 799
