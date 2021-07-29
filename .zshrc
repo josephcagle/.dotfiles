@@ -182,5 +182,7 @@ help () {
 
 
 # for zsh profiling
-[[ -f $HOME/.profilezsh ]] && zprof
+if [[ -f $HOME/.profilezsh ]]; then
+    zprof
+fi
 
