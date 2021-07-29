@@ -42,6 +42,7 @@ Plugin 'kana/vim-textobj-entire'
 Plugin 'terryma/vim-expand-region'
 Plugin 'matze/vim-move'
 " Plugin 'chaoren/vim-wordmotion'
+Plugin 'tpope/vim-rsi'
 
 " plugins compatible only with Vim 8
 if v:version > 799

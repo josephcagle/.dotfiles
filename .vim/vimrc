@@ -133,10 +133,6 @@ inoremap jk <Esc>
 "inoremap jA <Esc>jA
 "inoremap jI <Esc>jI
 
-inoremap <C-a> <Home>
-inoremap <C-e> <End>
-cnoremap <C-a> <Home>
-
 nnoremap <CR> G
 nnoremap <BS> gg
 
