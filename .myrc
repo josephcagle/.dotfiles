@@ -31,6 +31,18 @@ calc_path
 
 umask 022
 
+if (which nvim > /dev/null); then
+    export VISUAL=$(which nvim)
+    export EDITOR=$(which nvim)
+elif (which vim > /dev/null); then
+    export VISUAL=$(which vim)
+    export EDITOR=$(which vim)
+elif (which vi > /dev/null); then
+    export VISUAL=$(which vi)
+    export EDITOR=$(which vi)
+fi
+
+
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 
