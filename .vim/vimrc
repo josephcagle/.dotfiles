@@ -252,7 +252,7 @@ highlight QuickScopeSecondary guifg='#afff5f' gui=underline ctermfg=81 cterm=und
 let g:qs_max_chars=150
 
 
-let g:highlightedyank_highlight_duration = 200
+let g:highlightedyank_highlight_duration = 100
 
 " this is just the default settings + 'help'
 let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'help']
