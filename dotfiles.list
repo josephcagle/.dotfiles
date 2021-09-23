@@ -1,5 +1,5 @@
 
-# Files that `synctohomedir.sh` should sync
+# Files that `install.sh` should sync
 .vim/vimrc
 .vim/coc_config
 .vim/vundle_config
