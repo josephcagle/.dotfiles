@@ -80,8 +80,12 @@ set foldlevelstart=99
 if &t_Co > 128
     set termguicolors
 endif
-let g:tokyonight_style = 'storm'
-colorscheme tokyonight
+if has('nvim')
+    let g:tokyonight_style = 'storm'
+    colorscheme tokyonight
+else
+    colorscheme solarized8
+endif
 let g:airline_theme = 'onedark'
 set background=dark
 

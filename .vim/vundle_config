@@ -9,7 +9,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " plugins compatible with vim 7
 Plugin 'lifepillar/vim-solarized8'
-Plugin 'folke/tokyonight.nvim'
 Plugin 'romainl/vim-cool'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'preservim/nerdtree'
@@ -53,6 +52,7 @@ endif
 
 " plugins compatible only with nvim
 if has('nvim')
+    Plugin 'folke/tokyonight.nvim'
     Plugin 'nacro90/numb.nvim'
 endif
 
