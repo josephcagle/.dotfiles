@@ -5,10 +5,16 @@
     "java.referencesCodeLens.enabled": true,
     "java.implementationsCodeLens.enabled": true,
     "java.completion.enabled": true,
+    "javascript.suggestionActions.enabled": false,
+    "typescript.suggestionActions.enabled": false,
     "diagnostic.errorSign": "❱",
     "diagnostic.warningSign": "❯",
     "diagnostic.infoSign": "ℹ︎",
-    "diagnostic.messageTarget": "echo",
+    "diagnostic.messageTarget": "float",
+    "diagnostic.virtualText": true,
+    "diagnostic.virtualTextCurrentLineOnly": false,
+    "diagnostic.virtualTextPrefix": " ☞  ",
+    "diagnostic.checkCurrentLine": false,
     "list.selectedSignText": "✓ "
 }
 
