@@ -147,8 +147,8 @@ alias .='source'
 fpath+=$HOME/.mydotfiles_misc/pure
 autoload -U promptinit; promptinit
 prompt pure
-zstyle :prompt:pure:user color green
-zstyle :prompt:pure:host color cyan
+# zstyle :prompt:pure:user color green
+# zstyle :prompt:pure:host color cyan
 
 # command syntax highlighting
 source "$HOME/.mydotfiles_misc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
