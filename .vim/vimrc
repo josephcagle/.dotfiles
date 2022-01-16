@@ -12,8 +12,8 @@ source ~/.vim/vundle_config
 set backspace=indent,eol,start
 
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
 
 " TODO: put filetype detection in separate file
@@ -89,25 +89,18 @@ endif
 let g:airline_theme = 'onedark'
 set background=dark
 
-set scrolloff=5
+set scrolloff=1
 set guicursor=a:block
 
 map <Space> <Nop>
 let mapleader = " "
-nnoremap <Leader>h <C-w>h
-nnoremap <Leader>j <C-w>j
-nnoremap <Leader>k <C-w>k
-nnoremap <Leader>l <C-w>l
-" nnoremap <Leader>a GVgg
 nnoremap <Leader>. :set invlist<CR>
 nnoremap <Leader>s :w<CR>
-nnoremap <silent> <Leader>q :wqa<CR>
-nnoremap <silent> <Leader>Q :qa!<CR>
 nnoremap <silent> <Leader>w :confirm q<CR>
 function ToggleDarkBackground()
     if &background == 'dark'
         set background=light
-    elseif &background == 'light'
+    else
         set background=dark
     endif
 endfunction
@@ -119,16 +112,24 @@ nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
 nnoremap <silent> <Leader>cn :cnext<CR>
 nnoremap <silent> <Leader>cp :cprev<CR>
 nnoremap <silent> <Leader>co :copen<CR>
-nnoremap <silent> <Leader>cln :lnext<CR>
-nnoremap <silent> <Leader>clp :cprev<CR>
-nnoremap <silent> <Leader>clo :lopen<CR>
+nnoremap <silent> <Leader>ln :lnext<CR>
+nnoremap <silent> <Leader>lp :cprev<CR>
+nnoremap <silent> <Leader>lo :lopen<CR>
 
 autocmd Filetype java nnoremap <Leader>O :CocCommand java.action.organizeImports<CR>
 
+" quickly log stuff
+autocmd Filetype java vnoremap <Leader>l "lyoSystem.out.println();<C-[>P
+autocmd Filetype javascript,typescript vnoremap <Leader>l "lyoconsole.log()<C-[>P
+
 set splitbelow
 set splitright
-nnoremap <Leader>- :split<CR>
-nnoremap <Leader><Bslash> :vsplit<CR>
+nnoremap <silent> <Leader>- :split<CR>
+nnoremap <silent> <Leader><Bslash> :vsplit<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "inoremap ii <Esc>
 inoremap jk <Esc>
@@ -137,10 +138,12 @@ inoremap jk <Esc>
 "inoremap jA <Esc>jA
 "inoremap jI <Esc>jI
 
-nnoremap <CR> G
-nnoremap <BS> gg
-
 vnoremap v <Esc>
+
+vnoremap > >gv
+vnoremap < <gv
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 set timeoutlen=1000
 
@@ -156,9 +159,28 @@ set mouse=a
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
+" copy and paste from system clipboard
+nmap <Leader>y "+y
+vmap <Leader>y "+y
+nmap <Leader>d "+d
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+vmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>P "+P
+
+
 " From here on is plugin config
 
-let g:comfortable_motion_friction = 200.0
+
+" let g:comfortable_motion_friction = 200.0
+
+" let g:comfortable_motion_no_default_key_mappings = 1
+" let g:comfortable_motion_impulse_multiplier = 1  " Feel free to increase/decrease this value.
+" nnoremap <silent> <C-d> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * 2)<CR>
+" nnoremap <silent> <C-u> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * -2)<CR>
+" nnoremap <silent> <C-f> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * 4)<CR>
+" nnoremap <silent> <C-b> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * -4)<CR>
 
 "let g:better_whitespace_enabled=0
 
@@ -258,9 +280,9 @@ let g:highlightedyank_highlight_duration = 100
 let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'help']
 
 " For fzf
-nnoremap <silent> <C-p> :Files!<CR>
+nnoremap <silent> <Leader>F :Files!<CR>
 
-nmap <silent> <Leader>tt :TagbarToggle<CR>
+nmap <silent> <Leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 1
