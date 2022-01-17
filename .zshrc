@@ -14,7 +14,13 @@ source $HOME/.mydotfiles_misc/antigen.zsh
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+antigen theme romkatv/powerlevel10k
+
 antigen apply
+
+# powerlevel10k custom prompt
+# To generate a new prompt config, run `p10k configure`.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY
@@ -29,13 +35,6 @@ alias .='source'
 # and if there is no ~/.nokeychain file
 [[ $- == *i* ]] && [[ -o login ]] && \
     [[ ! -f $HOME/.nokeychain ]] && sshkeychain
-
-# Use "pure" theme, customizing colors
-fpath+=$HOME/.mydotfiles_misc/pure
-autoload -U promptinit; promptinit
-prompt pure
-# zstyle :prompt:pure:user color green
-# zstyle :prompt:pure:host color cyan
 
 # command syntax highlighting
 typeset -A ZSH_HIGHLIGHT_STYLES
