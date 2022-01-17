@@ -13,10 +13,9 @@ endif
 
 set backspace=indent,eol,start
 
-set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
 set autoindent
+" other settings managed by tpope/vim-sleuth
 
 " TODO: put filetype detection in separate file
 autocmd BufRead,BufNewFile *.md set filetype=markdown
