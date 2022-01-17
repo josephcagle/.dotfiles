@@ -53,6 +53,8 @@ function prompt_my_shlvl() {
 }
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=my_shlvl
 
+# for ^w etc.
+WORDCHARS='_'
 
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY
