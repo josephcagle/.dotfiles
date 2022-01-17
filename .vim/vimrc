@@ -4,9 +4,11 @@ set nocompatible
 "Vundle bootstrap
 if (! filereadable($HOME . '/.vim/bundle/Vundle.vim/.git/config') && confirm("Clone Vundle?", "Y\nn") == 1)
     exec '!git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
-    echo 'Now you can run ":PluginInstall" to install all the plugins.'
+    source ~/.vim/vundle_config
+    PluginInstall
+else
+    source ~/.vim/vundle_config
 endif
-source ~/.vim/vundle_config
 
 
 set backspace=indent,eol,start
