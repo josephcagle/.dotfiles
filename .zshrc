@@ -12,6 +12,8 @@ fi
 
 source $HOME/.mydotfiles_misc/antigen.zsh
 
+antigen bundle zsh-users/zsh-syntax-highlighting
+
 antigen apply
 
 # Don't share history between concurrent sessions
@@ -36,7 +38,6 @@ prompt pure
 # zstyle :prompt:pure:host color cyan
 
 # command syntax highlighting
-source "$HOME/.mydotfiles_misc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[command]='fg=magenta'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta'
