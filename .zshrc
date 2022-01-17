@@ -4,9 +4,9 @@
 # for zsh profiling
 [[ -f $HOME/.profilezsh ]] && zmodload zsh/zprof
 
-if [ ! -f $HOME/.mydotfiles_misc/antigen.zsh ]; then
+if [ ! -f $HOME/.antigen.zsh ]; then
     echo -n "Installing antigen..."
-    curl -Ls git.io/antigen > $HOME/.mydotfiles_misc/antigen.zsh
+    curl -Ls git.io/antigen > $HOME/.antigen.zsh
     echo " Done"
 fi
 
@@ -15,7 +15,7 @@ ZSH_AUTOCORRECT_BUFFER_MAX_SIZE=30
 ZSH_AUTOSUGGEST_USE_ASYNC=1
 ZSH_AUTOSUGGEST_HISTORY_IGNORE='cd *'
 
-source $HOME/.mydotfiles_misc/antigen.zsh
+source $HOME/.antigen.zsh
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
