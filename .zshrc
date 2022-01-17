@@ -36,16 +36,6 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z-_}={A-Za-z_-}'
 # highlight selection on tab
 zstyle ':completion:*' menu select
 
-# FZF setup
-if [[ ! -d $HOME/.fzf ]]; then
-    echo "Downloading and setting up fzf"
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf --quiet
-    ~/.fzf/install
-fi
-
-# Use fzf bindings if installed
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 function prompt_my_shlvl() {
     if (( $SHLVL > 1 )); then
         p10k segment -f red -i '' -t "SHLVL ${SHLVL}"
@@ -61,6 +51,9 @@ setopt APPEND_HISTORY
 setopt NO_SHARE_HISTORY
 
 . $HOME/.myrc
+
+# Use fzf bindings if installed
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # allow sourcing files in current directory
 alias .='source'

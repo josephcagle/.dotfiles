@@ -51,6 +51,13 @@ HISTCONTROL=ignoreboth
 
 . $HOME/.myaliases
 
+# FZF setup
+if [[ ! -d $HOME/.fzf ]]; then
+    echo "Downloading and setting up fzf"
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf --quiet
+    ~/.fzf/install
+fi
+
 export FZF_DEFAULT_COMMAND='2>/dev/null ag --hidden -g "" '\
 '--ignore .git '\
 '--ignore Library '\
