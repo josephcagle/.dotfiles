@@ -21,6 +21,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 
+antigen bundle ael-code/zsh-colored-man-pages
+
 antigen theme romkatv/powerlevel10k
 
 antigen apply
