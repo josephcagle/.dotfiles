@@ -4,6 +4,15 @@
 # for zsh profiling
 [[ -f $HOME/.profilezsh ]] && zmodload zsh/zprof
 
+if [ ! -f $HOME/.mydotfiles_misc/antigen.zsh ]; then
+    echo -n "Installing antigen..."
+    curl -Ls git.io/antigen > $HOME/.mydotfiles_misc/antigen.zsh
+    echo " Done"
+fi
+
+source $HOME/.mydotfiles_misc/antigen.zsh
+
+antigen apply
 
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY
