@@ -32,8 +32,8 @@ antigen apply
 # To generate a new prompt config, run `p10k configure`.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# case- and hyphen-insensitive completion
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z-_}={A-Za-z_-}'
+# case- and hyphen-insensitive completion, and partial words
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z-_}={A-Za-z_-}' '+l:|=* r:|=*'
 # highlight selection on tab
 zstyle ':completion:*' menu select
 
