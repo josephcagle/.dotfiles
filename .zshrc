@@ -22,6 +22,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 
 antigen bundle ael-code/zsh-colored-man-pages
+antigen bundle --loc=plugins/dirhistory
 
 antigen theme romkatv/powerlevel10k
 
@@ -49,6 +50,13 @@ WORDCHARS='_'
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY
 setopt NO_SHARE_HISTORY
+
+
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+setopt PUSHDMINUS
+alias d='dirs -v'
+
 
 . $HOME/.myrc
 
