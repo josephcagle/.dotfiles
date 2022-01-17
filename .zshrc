@@ -46,6 +46,13 @@ fi
 # Use fzf bindings if installed
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+function prompt_my_shlvl() {
+    if (( $SHLVL > 1 )); then
+        p10k segment -f red -i '' -t "SHLVL ${SHLVL}"
+    fi
+}
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=my_shlvl
+
 
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY
