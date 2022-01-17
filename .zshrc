@@ -97,6 +97,9 @@ help () {
     bash -c "help $*"
 }
 
+# push prompt to bottom
+printf '\n%.0s' {1..$(( $(tput lines) - 3 ))}
+
 
 # for zsh profiling
 if [[ -f $HOME/.profilezsh ]]; then
