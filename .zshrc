@@ -34,6 +34,17 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z-_}={A-Za-z_-}'
 # highlight selection on tab
 zstyle ':completion:*' menu select
 
+# FZF setup
+if [[ ! -d $HOME/.fzf ]]; then
+    echo "Downloading and setting up fzf"
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf --quiet
+    ~/.fzf/install
+fi
+
+# Use fzf bindings if installed
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY
 setopt NO_SHARE_HISTORY
@@ -73,9 +84,6 @@ bindkey "^N" down-line-or-search
 help () {
     bash -c "help $*"
 }
-
-# Use fzf bindings if installed
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
 # for zsh profiling
