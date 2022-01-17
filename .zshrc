@@ -10,9 +10,16 @@ if [ ! -f $HOME/.mydotfiles_misc/antigen.zsh ]; then
     echo " Done"
 fi
 
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
+ZSH_AUTOCORRECT_BUFFER_MAX_SIZE=30
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+ZSH_AUTOSUGGEST_HISTORY_IGNORE='cd *'
+
 source $HOME/.mydotfiles_misc/antigen.zsh
 
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
 
 antigen theme romkatv/powerlevel10k
 
@@ -21,6 +28,11 @@ antigen apply
 # powerlevel10k custom prompt
 # To generate a new prompt config, run `p10k configure`.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# case- and hyphen-insensitive completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z-_}={A-Za-z_-}'
+# highlight selection on tab
+zstyle ':completion:*' menu select
 
 # Don't share history between concurrent sessions
 setopt APPEND_HISTORY
