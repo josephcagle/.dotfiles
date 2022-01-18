@@ -15,12 +15,14 @@ ZSH_AUTOCORRECT_BUFFER_MAX_SIZE=30
 ZSH_AUTOSUGGEST_USE_ASYNC=1
 ZSH_AUTOSUGGEST_HISTORY_IGNORE='cd *'
 
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=brackets
+
 source $HOME/.antigen.zsh
 
+antigen bundle hlissner/zsh-autopair
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
-antigen bundle hlissner/zsh-autopair
 
 antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle --loc=plugins/dirhistory
