@@ -6,7 +6,8 @@
 
 if [ ! -f $HOME/.antigen.zsh ]; then
     echo -n "Installing antigen..."
-    curl -Ls git.io/antigen > $HOME/.antigen.zsh
+    curl -Ls https://raw.githubusercontent.com/zsh-users/antigen/v2.2.3/bin/antigen.zsh \
+        > $HOME/.antigen.zsh
     echo " Done"
 fi
 
@@ -16,6 +17,10 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 ZSH_AUTOSUGGEST_HISTORY_IGNORE='cd *'
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=brackets
+
+### WARNING - uncomment this line only when necessary, on a secure,
+### single-user system. Who knows what nasty stuff could happen otherwise
+# ANTIGEN_COMPINIT_OPTS+="-u"
 
 source $HOME/.antigen.zsh
 
