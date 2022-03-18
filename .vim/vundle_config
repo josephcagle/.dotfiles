@@ -30,7 +30,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'honza/vim-snippets'
-Plugin 'unblevable/quick-scope'
 Plugin 'AndrewRadev/tagalong.vim'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'preservim/tagbar'
@@ -62,6 +61,7 @@ endif
 if has('nvim-0.5')
     Plugin 'nvim-treesitter/nvim-treesitter'
     Plugin 'p00f/nvim-ts-rainbow'
+    Plugin 'ggandor/lightspeed.nvim'
 endif
 
 call vundle#end()
