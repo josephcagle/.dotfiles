@@ -97,6 +97,9 @@ ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=cyan'
 # Mac iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+bindkey -e
+
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
 #bindkey -s '^ ' 'vim $(fzf)^M'
