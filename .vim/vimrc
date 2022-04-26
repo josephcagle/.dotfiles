@@ -317,12 +317,16 @@ let g:expand_region_text_objects = {
       \ }
 
 " lightspeed config
-nmap <Tab> <Plug>Lightspeed_s
-nmap <S-Tab> <Plug>Lightspeed_S
-nmap g<Tab> <Plug>Lightspeed_gs
-nmap g<S-Tab> <Plug>Lightspeed_gS
 nnoremap s s
 nnoremap gs <Nop>
+nmap f <Plug>Lightspeed_s
+nmap F <Plug>Lightspeed_S
+nmap t <Plug>Lightspeed_gs
+nmap T <Plug>Lightspeed_gS
+" nmap g<Tab> <Plug>Lightspeed_gs
+" nmap g<S-Tab> <Plug>Lightspeed_gS
+nmap ; <Plug>Lightspeed_;_sx
+nmap , <Plug>Lightspeed_,_sx
 
 " Disable devicons
 " (user should enable this when they have installed a patched font)
