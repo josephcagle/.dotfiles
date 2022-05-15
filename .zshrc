@@ -50,6 +50,12 @@ function prompt_my_shlvl() {
         p10k segment -f red -i '' -t "SHLVL ${SHLVL}"
     fi
 }
+function prompt_note_to_self() {
+    if [ -f .nts ]; then
+        p10k segment -f green -i '♩' -t "$(head -n 1 .nts)"
+    fi
+}
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=note_to_self
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=my_shlvl
 
 # for ^w etc.
