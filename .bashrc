@@ -8,7 +8,8 @@ PS1='[$(date +%k:%M:%S) \u@\h] \w \$ '
 
 . $HOME/.myrc
 # Run the ssh keychain function if we are in an interactive login shell
-[[ $- == *i* ]] && shopt -q login_shell && sshkeychain
+# and if .nokeychain doesn't exist
+[[ $- == *i* ]] && shopt -q login_shell && [[ ! -f .nokeychain ]] && sshkeychain
 
 # append to the history file; don't overwrite it
 shopt -s histappend
