@@ -243,6 +243,7 @@ autocmd FileType scss setl iskeyword+=@-@,-,%
 let g:ft_improved_ignorecase = 1
 
 nmap <Leader>gu <Plug>(GitGutterUndoHunk)
+nmap <Leader>gp <Plug>(GitGutterPreviewHunk)
 " Unmap and remap some gitgutter mappings so <Leader>h works
 let g:gitgutter_map_keys = 0
 nmap [c <Plug>(GitGutterPrevHunk)
