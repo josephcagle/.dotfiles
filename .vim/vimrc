@@ -162,6 +162,9 @@ endif
 set shellcmdflag=-c
 
 set mouse=a
+if has('nvim-0.8')
+    set mousescroll=ver:2,hor:2
+endif
 
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
