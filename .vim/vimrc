@@ -93,6 +93,12 @@ set background=dark
 set scrolloff=1
 set guicursor=a:block
 
+if has('nvim-0.8')
+  set cmdheight=0
+else
+  set cmdheight=2
+endif
+
 map <Space> <Nop>
 let mapleader = " "
 nnoremap <Leader>. :set invlist<CR>
