@@ -55,6 +55,7 @@ set listchars=eol:¶,tab:⇥\ ,space:·
 highlight NonText guibg=NONE ctermbg=NONE
 highlight SpecialKey guibg=NONE ctermbg=NONE
 highlight Comment ctermfg=777 guifg=#aaaaaa
+autocmd ColorScheme * highlight link CocHighlightText DiagnosticVirtualTextInfo
 
 syntax on
 set display=lastline
