@@ -332,7 +332,7 @@ let g:expand_region_text_objects = {
 " leap.nvim config
 nmap f <Plug>(leap-forward-to)
 nmap F <Plug>(leap-backward-to)
-nmap gf <Plug>(leap-cross-window)
+nmap t <Plug>(leap-cross-window)
 vmap f <Plug>(leap-forward-till)
 omap f <Plug>(leap-forward-till)
 vmap F <Plug>(leap-backward-till)
