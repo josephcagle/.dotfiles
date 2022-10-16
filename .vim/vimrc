@@ -153,7 +153,7 @@ vnoremap < <gv
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-nnoremap <C-;> :
+nnoremap ; :
 
 set timeoutlen=1000
 
@@ -294,7 +294,7 @@ let g:highlightedyank_highlight_duration = 100
 let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'help']
 
 " For fzf
-nnoremap <silent> <C-'> :Files!<CR>
+nnoremap <silent> , :Files!<CR>
 let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
 
 nmap <silent> <Leader>t :TagbarToggle<CR>
