@@ -61,8 +61,15 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=my_shlvl
 # for ^w etc.
 WORDCHARS='_'
 
-# Don't share history between concurrent sessions
-setopt APPEND_HISTORY
+export HISTSIZE=10000000
+export HISTFILESIZE=10000000
+export HISTFILE=~/.zsh_history
+export HISTTIMEFORMAT="[%F %T]"
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
 setopt NO_SHARE_HISTORY
 
 
