@@ -61,7 +61,11 @@ endif
 if has('nvim-0.5')
     Plugin 'nvim-treesitter/nvim-treesitter'
     Plugin 'p00f/nvim-ts-rainbow'
-    Plugin 'ggandor/lightspeed.nvim'
+endif
+
+" plugins compatible only with nvim >= 0.7
+if has('nvim-0.7')
+    Plugin 'ggandor/leap.nvim'
 endif
 
 call vundle#end()

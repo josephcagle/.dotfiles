@@ -327,17 +327,14 @@ let g:expand_region_text_objects = {
       \ 'ae'  :0,
       \ }
 
-" lightspeed config
-nnoremap s s
-nnoremap gs <Nop>
-nmap f <Plug>Lightspeed_s
-nmap F <Plug>Lightspeed_S
-nmap t <Plug>Lightspeed_gs
-nmap T <Plug>Lightspeed_gS
-" nmap g<Tab> <Plug>Lightspeed_gs
-" nmap g<S-Tab> <Plug>Lightspeed_gS
-nmap ; <Plug>Lightspeed_;_sx
-nmap , <Plug>Lightspeed_,_sx
+" leap.nvim config
+nmap f <Plug>(leap-forward-to)
+nmap F <Plug>(leap-backward-to)
+nmap gf <Plug>(leap-cross-window)
+vmap f <Plug>(leap-forward-till)
+omap f <Plug>(leap-forward-till)
+vmap F <Plug>(leap-backward-till)
+omap F <Plug>(leap-backward-till)
 
 " Disable devicons
 " (user should enable this when they have installed a patched font)
