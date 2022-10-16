@@ -153,6 +153,8 @@ vnoremap < <gv
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+nnoremap <C-;> :
+
 set timeoutlen=1000
 
 if executable("zsh")
@@ -292,7 +294,7 @@ let g:highlightedyank_highlight_duration = 100
 let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'help']
 
 " For fzf
-nnoremap <silent> <Leader>F :Files!<CR>
+nnoremap <silent> <C-'> :Files!<CR>
 let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
 
 nmap <silent> <Leader>t :TagbarToggle<CR>
