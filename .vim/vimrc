@@ -61,7 +61,8 @@ syntax on
 set display=lastline
 set nowrap
 set ruler
-set number relativenumber
+" set number relativenumber
+set number
 if has('signs')
     if has('nvim')
         set signcolumn=yes:2
