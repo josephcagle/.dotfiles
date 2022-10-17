@@ -27,8 +27,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'AndrewRadev/tagalong.vim'
 Plugin 'myusuf3/numbers.vim'
@@ -66,6 +64,9 @@ endif
 " plugins compatible only with nvim >= 0.7
 if has('nvim-0.7')
     Plugin 'ggandor/leap.nvim'
+    " telescope and deps
+    Plugin 'nvim-lua/plenary.nvim'
+    Plugin 'nvim-telescope/telescope.nvim'
 endif
 
 call vundle#end()
@@ -74,5 +75,17 @@ filetype plugin indent on
 
 if has('nvim')
     lua require('numb').setup()
+endif
+
+if has('nvim-0.7')
+    lua << ENDLUA
+        require('telescope').setup{
+            pickers = {
+                find_files = {
+                    theme = "dropdown"
+                }
+            }
+        }
+ENDLUA
 endif
 

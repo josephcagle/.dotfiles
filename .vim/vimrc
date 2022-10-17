@@ -294,8 +294,8 @@ let g:highlightedyank_highlight_duration = 100
 let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'help']
 
 " For fzf
-nnoremap <silent> , :Files!<CR>
-let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
+" nnoremap <silent> , :Files!<CR>
+" let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
 
 nmap <silent> <Leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
@@ -329,14 +329,27 @@ let g:expand_region_text_objects = {
       \ 'ae'  :0,
       \ }
 
-" leap.nvim config
-nmap f <Plug>(leap-forward-to)
-nmap F <Plug>(leap-backward-to)
-nmap t <Plug>(leap-cross-window)
-vmap f <Plug>(leap-forward-till)
-omap f <Plug>(leap-forward-till)
-vmap F <Plug>(leap-backward-till)
-omap F <Plug>(leap-backward-till)
+if has('nvim-0.7')
+    " leap.nvim config
+    nmap f <Plug>(leap-forward-to)
+    nmap F <Plug>(leap-backward-to)
+    nmap t <Plug>(leap-cross-window)
+    vmap f <Plug>(leap-forward-till)
+    omap f <Plug>(leap-forward-till)
+    vmap F <Plug>(leap-backward-till)
+    omap F <Plug>(leap-backward-till)
+
+
+" telescope
+    nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+    nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+    nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+    if executable('rg')
+        nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+    else
+        nnoremap <leader>fg <cmd>echo 'ripgrep not installed'<cr>
+    endif
+endif
 
 " Disable devicons
 " (user should enable this when they have installed a patched font)
