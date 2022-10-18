@@ -330,6 +330,13 @@ let g:expand_region_text_objects = {
       \ 'ae'  :0,
       \ }
 
+" commentary plugin
+nmap , gc
+vmap , gc
+nmap ,, gcc
+omap , gc
+
+
 if has('nvim-0.7')
     " leap.nvim config
     nmap f <Plug>(leap-forward-to)
