@@ -364,6 +364,8 @@ if has('nvim-0.7')
     endif
 endif
 
+nmap <silent> <leader>/ :IndentBlanklineToggle<CR>
+
 " Disable devicons
 " (user should enable this when they have installed a patched font)
 " (https://github.com/ryanoasis/vim-devicons)
